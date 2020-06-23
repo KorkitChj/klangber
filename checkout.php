@@ -48,16 +48,16 @@ if (isset($_POST["email"])) {
     <meta name="description" content="" />
     <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
 
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.7/css/fixedHeader.bootstrap4.min.css" />
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/ddsmoothmenu.js">
-        /***********************************************
-         * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-         * This notice MUST stay intact for legal use
-         * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-         ***********************************************/
-    </script>
+    <script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js"></script>
 
     <script type="text/javascript">
         ddsmoothmenu.init({
@@ -122,7 +122,7 @@ if (isset($_POST["email"])) {
             <div id="templatemo_menubar">
                 <div id="top_nav" class="ddsmoothmenu">
                     <ul>
-                        <li><a href="index.php" class="selected">หน้าแรก</a></li>
+                        <!-- <li><a href="index.php" class="selected">หน้าแรก</a></li>
                         <li><a href="products.php">หมวดหมู่เบอร์</a>
                             <ul>
                                 <li><a href="products.php #tel1">เบอร์มงคล</a></li>
@@ -134,7 +134,7 @@ if (isset($_POST["email"])) {
                             </ul>
                         </li>
                         <li><a href="about.php">วิธีสั่งซื้อ</a></li>
-                        <li><a href="faqs.php">ติดต่อเรา</a></li>
+                        <li><a href="faqs.php">ติดต่อเรา</a></li> -->
                         <li><a href="checkout.php">Admin</a></li>
 
                     </ul>
@@ -167,22 +167,6 @@ if (isset($_POST["email"])) {
                                     <th colspan="2">เครื่องมือ</th>
                                 </tr>
                             </thead>
-                            <!-- <tfoot>
-                                <tr>
-                                    <td colspan="7">
-                                        <div id="paging">
-                                            <ul>
-                                                <li><a href="#"><span>Previous</span></a></li>
-                                                <li><a href="#" class="active"><span>1</span></a></li>
-                                                <li><a href="#"><span>2</span></a></li>
-                                                <li><a href="#"><span>3</span></a></li>
-                                                <li><a href="#"><span>4</span></a></li>
-                                                <li><a href="#"><span>5</span></a></li>
-                                                <li><a href="#"><span>Next</span></a></li>
-                                            </ul>
-                                        </div>
-                                </tr>
-                            </tfoot>
                             <tbody>
                                 <tr>
                                     <td>093-6556550</td>
@@ -292,7 +276,7 @@ if (isset($_POST["email"])) {
                                     <td>แก้ไข</td>
                                     <td>ลบทิ้ง</td>
                                 </tr>
-                            </tbody> -->
+                            </tbody>
                         </table>
                     </div><br>
                 </div>
@@ -310,7 +294,7 @@ if (isset($_POST["email"])) {
         </div> <!-- END of templatemo_footer -->
     </div>
 
-    </div> END of templatemo_body_wrapper
+    </div>
 
 </body>
 
