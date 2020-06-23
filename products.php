@@ -57,8 +57,8 @@
             <div id="templatemo_menubar">
                 <div id="top_nav" class="ddsmoothmenu">
                     <ul>
-                        <li><a href="index.html" class="selected">หน้าแรก</a></li>
-                        <li><a href="products.html">หมวดหมู่เบอร์</a>
+                        <li><a href="index.php" class="selected">หน้าแรก</a></li>
+                        <li><a href="products.php">หมวดหมู่เบอร์</a>
                             <ul>
                                 <li><a href="#tel1">เบอร์มงคล</a></li>
                                 <li><a href="#tel2">เบอร์มงคลท้าย</a></li>
@@ -68,9 +68,9 @@
                                 <li><a href="#tel6">เบอร์โฟร์</a></li>
                             </ul>
                         </li>
-                        <li><a href="about.html">วิธีสั่งซื้อ</a></li>
-                        <li><a href="faqs.html">ติดต่อเรา</a></li>
-                        <li><a href="Login/login.html">Admin</a></li>
+                        <li><a href="about.php">วิธีสั่งซื้อ</a></li>
+                        <li><a href="faqs.php">ติดต่อเรา</a></li>
+                        <li><a href="Login/login.php">Admin</a></li>
 
                     </ul>
                     <br style="clear: left" />
@@ -93,77 +93,77 @@
                     </a>
                     <div class="product_box">
                       <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
                     <div class="cleaner"></div>
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
-                    </div>
-
-                    <!-- ขึ้นบรรทัดใหม่ -->
-                    <div class="cleaner"></div>
-                    <div class="product_box">
-                        <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
-                        </p>
-                        <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
-                    </div>
-
-                    <div class="product_box">
-                        <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
-                        </p>
-                        <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
                     <div class="cleaner"></div>
-
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
+                        </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
+                    </div>
+
+                    <!-- ขึ้นบรรทัดใหม่ -->
+                    <div class="cleaner"></div>
+
+                    <div class="product_box">
+                        <h3>&nbsp;</h3>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <p class="product_price">20,000 บาท </p>
+                        <a href="productdetail.php" class="addtocart"></a>
+                    </div>
+
+                    <div class="product_box">
+                        <h3>&nbsp;</h3>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        </p>
+                        <p class="product_price">20,000 บาท </p>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
@@ -171,11 +171,11 @@
 
                     <!-- <div class="product_box no_margin_right">
                         <h3>Nam vehicula</h3>
-                        <a href="productdetail.html"><img src="images/product/09.jpg" alt="Shoes 9" /></a>
+                        <a href="productdetail.php"><img src="images/product/09.jpg" alt="Shoes 9" /></a>
                         <p>Vivamus accumsan luctus interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         </p>
                         <p class="product_price">$ 65</p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div> -->
 
                     <!-- หมวดเบอร์ 2  -->
@@ -184,59 +184,59 @@
                     </a>
                     <div class="product_box">
                       <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-9999999</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-9999999</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
-                    </div>
-
-                    <!-- ขึ้นบรรทัดใหม่ -->
-                    <div class="cleaner"></div>
-                    <div class="product_box">
-                        <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-1234567</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
-                        <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
-                    </div>
-
-                    <div class="product_box">
-                        <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-9999999</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
-                        </p>
-                        <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
                     <div class="cleaner"></div>
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">099-9999999</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
-                        </p>
+                        <h2><a href="productdetail.php">086-1234567</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">099-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-9999999</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
+                    </div>
+
+                    <!-- ขึ้นบรรทัดใหม่ -->
+                    <div class="cleaner"></div>
+                    <div class="product_box">
+                        <h3>&nbsp;</h3>
+                        <h2><a href="productdetail.php">099-9999999</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
+                        </p>
+                        <p class="product_price">20,000 บาท </p>
+                        <a href="productdetail.php" class="addtocart"></a>
+                    </div>
+
+                    <div class="product_box">
+                        <h3>&nbsp;</h3>
+                        <h2><a href="productdetail.php">099-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        </p>
+                        <p class="product_price">20,000 บาท </p>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
@@ -244,20 +244,20 @@
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">088-1234567</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">088-1234567</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">088-1234567</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">088-1234567</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
@@ -269,79 +269,79 @@
                     </a>
                     <div class="product_box">
                       <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
                     <div class="cleaner"></div>
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
-                    </div>
-
-                    <!-- ขึ้นบรรทัดใหม่ -->
-                    <div class="cleaner"></div>
-                    <div class="product_box">
-                        <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
-                        </p>
-                        <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
-                    </div>
-
-                    <div class="product_box">
-                        <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
-                        </p>
-                        <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
                     <div class="cleaner"></div>
-
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
+                    </div>
+
+                    <!-- ขึ้นบรรทัดใหม่ -->
+                    <div class="cleaner"></div>
+
+                    <div class="product_box">
+                        <h3>&nbsp;</h3>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
+                        </p>
+                        <p class="product_price">20,000 บาท </p>
+                        <a href="productdetail.php" class="addtocart"></a>
+                    </div>
+
+                    <div class="product_box">
+                        <h3>&nbsp;</h3>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        </p>
+                        <p class="product_price">20,000 บาท </p>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
@@ -353,78 +353,78 @@
                     </a>
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
                     <div class="cleaner"></div>
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
-                    </div>
-
-                    <!-- ขึ้นบรรทัดใหม่ -->
-                    <div class="cleaner"></div>
-                    <div class="product_box">
-                        <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
-                        </p>
-                        <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
-                    </div>
-
-                    <div class="product_box">
-                        <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
-                        </p>
-                        <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
                     <div class="cleaner"></div>
-
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
+                    </div>
+
+                    <!-- ขึ้นบรรทัดใหม่ -->
+                    <div class="cleaner"></div>
+
+                    <div class="product_box">
+                        <h3>&nbsp;</h3>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
+                        </p>
+                        <p class="product_price">20,000 บาท </p>
+                        <a href="productdetail.php" class="addtocart"></a>
+                    </div>
+
+                    <div class="product_box">
+                        <h3>&nbsp;</h3>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        </p>
+                        <p class="product_price">20,000 บาท </p>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
@@ -436,78 +436,78 @@
                     </a>
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
                     <div class="cleaner"></div>
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
-                    </div>
-
-                    <!-- ขึ้นบรรทัดใหม่ -->
-                    <div class="cleaner"></div>
-                    <div class="product_box">
-                        <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
-                        </p>
-                        <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
-                    </div>
-
-                    <div class="product_box">
-                        <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
-                        </p>
-                        <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
                     <div class="cleaner"></div>
-
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
+                    </div>
+
+                    <!-- ขึ้นบรรทัดใหม่ -->
+                    <div class="cleaner"></div>
+
+                    <div class="product_box">
+                        <h3>&nbsp;</h3>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
+                        </p>
+                        <p class="product_price">20,000 บาท </p>
+                        <a href="productdetail.php" class="addtocart"></a>
+                    </div>
+
+                    <div class="product_box">
+                        <h3>&nbsp;</h3>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
+                        </p>
+                        <p class="product_price">20,000 บาท </p>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
@@ -519,79 +519,79 @@
                     </a>
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/true.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
                     <div class="cleaner"></div>
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-9999999</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-9999999</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
-                    </div>
-
-                    <!-- ขึ้นบรรทัดใหม่ -->
-                    <div class="cleaner"></div>
-                    <div class="product_box">
-                        <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-6666666</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
-                        </p>
-                        <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
-                    </div>
-
-                    <div class="product_box">
-                        <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-8888888</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
-                        </p>
-                        <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
                     <div class="cleaner"></div>
-
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-8888888</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        <h2><a href="productdetail.php">086-6666666</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
                         </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <div class="product_box">
                         <h3>&nbsp;</h3>
-                        <h2><a href="productdetail.html">086-8888888</a></h2>
-                        <p><a href="productdetail.html"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <h2><a href="productdetail.php">086-8888888</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        </p>
                         <p class="product_price">20,000 บาท </p>
-                        <a href="productdetail.html" class="addtocart"></a>
+                        <a href="productdetail.php" class="addtocart"></a>
+                    </div>
+
+                    <!-- ขึ้นบรรทัดใหม่ -->
+                    <div class="cleaner"></div>
+
+                    <div class="product_box">
+                        <h3>&nbsp;</h3>
+                        <h2><a href="productdetail.php">086-8888888</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/dtac.png" hspace="20" /></a>ผลรวม 23
+                        </p>
+                        <p class="product_price">20,000 บาท </p>
+                        <a href="productdetail.php" class="addtocart"></a>
+                    </div>
+
+                    <div class="product_box">
+                        <h3>&nbsp;</h3>
+                        <h2><a href="productdetail.php">086-8888888</a></h2>
+                        <p><a href="productdetail.php"><img src="images/product/ais.png" hspace="20" /></a>ผลรวม 23</p>
+                        <p class="product_price">20,000 บาท </p>
+                        <a href="productdetail.php" class="addtocart"></a>
                     </div>
 
                     <!-- ขึ้นบรรทัดใหม่ -->
@@ -604,9 +604,9 @@
         <!-- ส่วนท้าย -->
         <div id="background_footer">
             <div id="templatemo_footer">
-                <p><a href="index.html">หน้าแรก</a> | <a href="products.html">หมวดหมู่เบอร์</a> | <a
-                        href="about.html">วิธีสั่งซื้อ</a> | <a href="faqs.html">ติดต่อเรา</a> | <a
-                        href="Login/login.html">Admin</a>
+                <p><a href="index.php">หน้าแรก</a> | <a href="products.php">หมวดหมู่เบอร์</a> | <a
+                        href="about.php">วิธีสั่งซื้อ</a> | <a href="faqs.php">ติดต่อเรา</a> | <a
+                        href="Login/login.php">Admin</a>
                 </p>
                 Copyright © 2072 <a href="#">KlangBer.com</a> <!-- Credit: www.templatemo.com -->
             </div> <!-- END of templatemo_footer -->

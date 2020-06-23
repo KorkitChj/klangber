@@ -57,20 +57,20 @@
             <div id="templatemo_menubar">
                 <div id="top_nav" class="ddsmoothmenu">
                     <ul>
-                        <li><a href="index.html" class="selected">หน้าแรก</a></li>
-                        <li><a href="products.html">หมวดหมู่เบอร์</a>
+                        <li><a href="index.php" class="selected">หน้าแรก</a></li>
+                        <li><a href="products.php">หมวดหมู่เบอร์</a>
                             <ul>
-                                <li><a href="products.html #tel1">เบอร์มงคล</a></li>
-                                <li><a href="products.html #tel2">เบอร์มงคลท้าย</a></li>
-                                <li><a href="products.html #tel3">เบอร์หงส์มังกร</a></li>
-                                <li><a href="products.html #tel4">เบอร์เรียง</a></li>
-                                <li><a href="products.html #tel5">เบอร์ตอง</a></li>
-                                <li><a href="products.html #tel6">เบอร์โฟร์</a></li>
+                                <li><a href="products.php #tel1">เบอร์มงคล</a></li>
+                                <li><a href="products.php #tel2">เบอร์มงคลท้าย</a></li>
+                                <li><a href="products.php #tel3">เบอร์หงส์มังกร</a></li>
+                                <li><a href="products.php #tel4">เบอร์เรียง</a></li>
+                                <li><a href="products.php #tel5">เบอร์ตอง</a></li>
+                                <li><a href="products.php #tel6">เบอร์โฟร์</a></li>
                             </ul>
                         </li>
-                        <li><a href="about.html">วิธีสั่งซื้อ</a></li>
-                        <li><a href="faqs.html">ติดต่อเรา</a></li>
-                        <li><a href="Login/login.html">Admin</a></li>
+                        <li><a href="about.php">วิธีสั่งซื้อ</a></li>
+                        <li><a href="faqs.php">ติดต่อเรา</a></li>
+                        <li><a href="Login/login.php">Admin</a></li>
 
                     </ul>
                     <br style="clear: left" />
@@ -132,7 +132,7 @@
                         </tr>
                         <tr>
                             <td colspan="3" align="right" height="30px">Have you modified your basket? Please click here
-                                to <a href="shoppingcart.html"><strong>Update</strong></a>&nbsp;&nbsp;</td>
+                                to <a href="shoppingcart.php"><strong>Update</strong></a>&nbsp;&nbsp;</td>
                             <td align="right" style="background:#ddd; font-weight:bold"> Total </td>
                             <td align="right" style="background:#ddd; font-weight:bold">$240 </td>
                             <td style="background:#ddd; font-weight:bold"> </td>
@@ -140,7 +140,7 @@
                     </table>
                     <div style="float:right; width: 215px; margin-top: 20px;">
 
-                        <p><a href="checkout.html">Proceed to checkout</a></p>
+                        <p><a href="checkout.php">Proceed to checkout</a></p>
                         <p><a href="javascript:history.back()">Continue shopping</a></p>
 
                     </div>

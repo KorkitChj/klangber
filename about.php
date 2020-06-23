@@ -4,7 +4,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Shoes Store - Product Detail</title>
+    <title>Shoes Store - About Us</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
@@ -34,11 +34,6 @@
 
     </script>
 
-    <script type="text/javascript" src="js/jquery-1-4-2.min.js"></script>
-    <link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
-    <script type="text/JavaScript" src="js/slimbox2.js"></script>
-
-
 </head>
 
 <body>
@@ -52,7 +47,7 @@
                     </h1>
                 </div>
                 <div id="header_right">
-                    <p> </p>
+                    <p></p>
                 </div>
                 <div class="cleaner"></div>
             </div> <!-- END of templatemo_header -->
@@ -62,21 +57,22 @@
             <div id="templatemo_menubar">
                 <div id="top_nav" class="ddsmoothmenu">
                     <ul>
-                        <li><a href="index.html" class="selected">หน้าแรก</a></li>
-                        <li><a href="products.html">หมวดหมู่เบอร์</a>
+                        <li><a href="index.php" class="selected">หน้าแรก</a></li>
+                        <li><a href="products.php">หมวดหมู่เบอร์</a>
                             <ul>
-                                <li><a href="products.html #tel1">เบอร์มงคล</a></li>
-                                <li><a href="products.html #tel2">เบอร์มงคลท้าย</a></li>
-                                <li><a href="products.html #tel3">เบอร์หงส์มังกร</a></li>
-                                <li><a href="products.html #tel4">เบอร์เรียง</a></li>
-                                <li><a href="products.html #tel5">เบอร์ตอง</a></li>
-                                <li><a href="products.html #tel6">เบอร์โฟร์</a></li>
+                                <li><a href="products.php #tel1">เบอร์มงคล</a></li>
+                                <li><a href="products.php #tel2">เบอร์มงคลท้าย</a></li>
+                                <li><a href="products.php #tel3">เบอร์หงส์มังกร</a></li>
+                                <li><a href="products.php #tel4">เบอร์เรียง</a></li>
+                                <li><a href="products.php #tel5">เบอร์ตอง</a></li>
+                                <li><a href="products.php #tel6">เบอร์โฟร์</a></li>
                             </ul>
                         </li>
-                        <li><a href="about.html">วิธีสั่งซื้อ</a></li>
-                        <li><a href="faqs.html">ติดต่อเรา</a></li>
-                        <li><a href="Login/login.html">Admin</a></li>
+                        <li><a href="about.php">วิธีสั่งซื้อ</a></li>
+                        <li><a href="faqs.php">ติดต่อเรา</a></li>
+                        <li><a href="Login/login.php">Admin</a></li>
                     </ul>
+
                     <br style="clear: left" />
                 </div> <!-- end of ddsmoothmenu -->
                 <div id="templatemo_search">
@@ -91,31 +87,10 @@
 
             <div id="templatemo_main">
 
-                <div id="content" class="float_center">
-
-                    <h1><img src="images/10.png" width="518" height="187" /></h1>
-
-                    <div class="product_detail_border">
-                        <img src="images/product/dtac.png" width="147" height="79" hspace="20" />
-                        <p>&nbsp;</p>
-                        <h1> 089-9999999</h1>
-                        <div class="product_detail_price">
-                            <h4>ราคา 80 บาท</h4>
-                        </div>
-
-                        <p>&nbsp;</p>
-                        <p><img src="images/facebook.png" width="51" height="53" /> <img src="images/line.jpg" width="52"
-                                height="53" /> <img src="images/icon.png" width="53" height="53" /></p>
-                        <p>&nbsp;</p>
-
-                        <p>ติดต่อเรา: 066-1689999,0644566651</p>
-                        <p>facebook: KlangBer คลังเบอร์</p>
-                        <p>Line: @ber999</p>
-
-                        <div class="cleaner h20"></div>
-                    </div>
-                    <div class="cleaner h30"></div>
-                    <h5>&nbsp;</h5>
+                <div id="content" class="float_b">
+                    <h1><img src="images/16.png" width="757" height="125" /></h1>
+                  <h2><img src="images/89.png" width="702" height="417" /></h2>
+                    <h2>&nbsp;</h2>
                 </div>
                 <div class="cleaner"></div>
             </div> <!-- END of templatemo_main -->
@@ -124,12 +99,13 @@
         <!-- ส่วนท้าย -->
         <div id="background_footer">
             <div id="templatemo_footer">
-                <p><a href="#">Home</a> | <a href="#">Products</a> | <a href="#">About</a> | <a href="#">FAQs</a> | <a
-                        href="#">Checkout</a> | <a href="#">Contact Us</a>
+                <p><a href="index.php">หน้าแรก</a> | <a href="products.php">หมวดหมู่เบอร์</a> | <a href="about.php">วิธีสั่งซื้อ</a> | <a href="faqs.php">ติดต่อเรา</a> | <a
+                        href="Login/login.php">Admin</a> 
                 </p>
-                Copyright © 2072 <a href="#">Your Company Name</a> <!-- Credit: www.templatemo.com -->
+                Copyright © 2072 <a href="#">KlangBer.com</a> <!-- Credit: www.templatemo.com -->
             </div> <!-- END of templatemo_footer -->
         </div>
+
     </div> <!-- END of templatemo_body_wrapper -->
 
 </body>
