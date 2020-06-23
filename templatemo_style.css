@@ -1,0 +1,478 @@
+/* หน้าจอทั้งหมด */
+body {
+	margin: 0;
+	padding: 0;
+	color: #999;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 1.4em; 
+	background-color: #665f5f;
+	background-repeat: repeat;
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);  background-image: url(images/bg.jpg);
+	
+}
+
+a, a:link, a:visited { color: #0299aa; font-weight: normal; text-decoration: none }
+a:hover { text-decoration: underline; }
+
+a.addtocart{ display: inline-block; width: 80px; height: 21px; line-height: 21px; text-align: center; font-size: 10px; font-weight: bold; color: #333; background: url(images/templatemo_addtocart.png) }
+a.detail{ display: inline-block; width: 64px; height: 20px; line-height: 20px; text-align: center; font-size: 10px; font-weight: bold; color: #333; background: url(images/templatemo_detail.png) }
+
+p { margin: 0 0 10px 0; padding: 0; }
+img { border: none; }
+blockquote { border: 1px solid #039fb1; border-left: 5px solid #000; padding: 19px; margin: 20px 0 0 0}
+cite a, cite a:link, cite a:visited  { font-size: 12px; text-decoration: none; font-style: normal }
+cite span { font-weight: 400; color: #333; }
+
+.tmo_list { margin: 10px 0 10px 15px; padding: 0; list-style: none }
+.tmo_list li { color:#999; margin: 0 0 5px 0; padding: 0 0 0 15px; background: url(images/templatemo_list.png) no-repeat scroll 0 5px  }
+.tmo_list li a { color: #999; font-weight: normal }
+.tmo_list li a:hover { color: #333 }
+
+
+h1, h2, h3, h4, h5, h6 { color: #333; font-weight: normal; }
+h1 { font-size: 30px; margin: 0 0 30px; padding: 5px 0 }
+h2 { font-size: 26px; margin: 0 0 25px; padding: 5px 0 }
+h3 { font-size: 20px; margin: 0 0 20px; padding: 0; }
+h4 { font-size: 16px; margin: 0 0 15px; padding: 0; }
+h5 { font-size: 14px; margin: 0 0 10px; padding: 0;  }
+h6 { font-size: 12px; margin: 0 0 5px; padding: 0; }
+
+.cleaner { clear: both }
+.h10 { height: 10px }
+.h20 { height: 20px }
+.h30 { height: 30px }
+.h40 { height: 40px }
+.h50 { height: 50px }
+
+.float_l { float: left }
+.float_r { float: right }
+.float_b {text-align: left;}
+.float_center {text-align: center;}
+
+#position_button{
+	float: right;
+}
+
+/* css ของ ตาราง -------------------------------------------------------------------------------------------------------------------------- */
+.datagrid table { 
+	border-collapse: collapse; 
+	text-align: center; 
+	width: 100%;
+ } 
+.datagrid { 
+	   font: normal 12px/150% Verdana, Arial, Helvetica, sans-serif; 
+	   background: #fff; 
+	   overflow: hidden; 
+	   border: 2px solid #36752D; 
+	   -webkit-border-radius: 3px; 
+	   -moz-border-radius: 3px;
+	   border-radius: 3px; 
+	}
+.datagrid table td, .datagrid table th { padding: 20px 1px; }
+.datagrid table thead th {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3F996C), color-stop(1, #27542F) );
+	background:-moz-linear-gradient( center top, #3F996C 5%, #27542F 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3F996C', endColorstr='#27542F');
+	background-color:#3F996C; 
+	color:#FFFCFC; 
+	font-size: 16px;
+	font-weight: bold; 
+	border-left: 2px solid #26B52B; 
+} 
+.datagrid table thead th:first-child { border: none; }
+.datagrid table tbody td { 
+	color: #000000; 
+	border-left: 2px solid #BDF48E;
+	font-size: 15px;
+	border-bottom: 2px solid #D9F4DF;
+	font-weight: normal; 
+}
+.datagrid table tbody .alt td { 
+	background: #DFFFDE; 
+	color: #000000; 
+}
+.datagrid table tbody td:first-child { border-left: none; }
+.datagrid table tbody tr:last-child td { border-bottom: none; }
+.datagrid table tfoot td div { 
+	border-top: 1px solid #36752D;
+	background: #DFFFDE;
+} 
+.datagrid table tfoot td { 
+	padding: 0;
+	font-size: 15px 
+} 
+.datagrid table tfoot td div{ padding: 12px; }
+.datagrid table tfoot td ul { 
+	margin: 0; 
+	padding:0; 
+	list-style: none; 
+	text-align: right; 
+}
+.datagrid table tfoot  li { display: inline; }
+.datagrid table tfoot li a { 
+	text-decoration: none; 
+	display: inline-block;  
+	padding: 2px 8px; margin: 1px;color: #FFFFFF;
+	border: 1px solid #4E9967;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px; 
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3F996C), color-stop(1, #245729) );
+	background:-moz-linear-gradient( center top, #3F996C 5%, #245729 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3F996C', endColorstr='#245729');
+	background-color:#3F996C; 
+}
+.datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover {
+	 text-decoration: none;
+	 border-color: #97FF52; 
+	 color: #FFFFFF;
+	 background: none; 
+	 background-color:#51FF3D;
+}
+div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }
+/* จบ css ตาราง---------------------------------------------------------------------------------------------------------------------- */
+
+
+/* พื้นหลังทั้งหมด */
+#templatemo_body_wrapper {
+	width: 100%;
+	background-color: #FFD5AF;
+	/*background: url(images/bg.png) repeat-x top	*/
+}
+
+/* พื้นหลังของเนื้อหาทั้งหมด */
+#templatemo_wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+
+/* พื้นหลังส่วนหัว */
+#background_header{
+	background-color: #888870;
+}
+
+#templatemo_header {
+	width: 100%;
+	height: 100px;
+	padding: 85px 200px;
+	background: url(images/logo.png) no-repeat bottom; 
+}
+
+#templatemo_menubar {
+	width: 980px;
+	height: 60px;
+	background: url(images/templatemo_menubar.png) no-repeat;
+}
+
+#templatemo_main {
+	width: 940px;
+	padding-left:150px;
+	background: url(images/templatemo_main_bg.png) repeat-y
+}
+
+/* ตำแหน่งของตาราง */
+#templatemo_main_table {
+	width: 940px;
+	padding-left:40px;
+	background: url(images/templatemo_main_bg.png) repeat-y
+}
+
+/* เนื้อหาทั่วไป */
+#content {
+	width: 690px;
+	bottom: auto;
+}
+/* เนื้อหาตาราง */
+#content_table {
+	width: 900px;
+	bottom: auto;
+}
+
+#sidebar { width: 220px }
+
+/* พื้นหลังส่วนท้าย */
+#background_footer{
+	background-color: #665f5f;
+}
+
+#templatemo_footer {
+	width: 100%;
+	padding: 50px 10px;
+	text-align: center;
+	/*background: url(images/templatemo_footer.png) no-repeat top */
+}
+
+#site_title { float: left; margin-top: 30px; }
+#site_title h1 { margin: 0; padding: 0 }
+#site_title h1 a { display: block; width: 300px; height: 40px; padding-top: 70px; padding-left: 130px ;font-size: 30px; letter-spacing: 4px; color: #ffffff; text-align: left; background: url(images/.jpg) no-repeat top left }
+
+#header_right { 
+    background: url(images/welcomeTo.png) no-repeat bottom;
+	margin-left: 460px;
+	padding: inherit;
+}
+
+#menu_second_bar { padding: 5px 10px; }
+#top_shopping_cart { float: left; padding: 5px 0; font-size: 11px; }
+
+#templatemo_search { float: right; margin: 10px 30px 0; width: 220px; height: 34px; background: url(images/templatemo_search_bg.png) }
+#templatemo_search form {
+	margin: 0;
+	padding: 0;
+}
+
+#templatemo_search .txt_field {
+	float: left;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	width: 170px;
+	color: #999;
+	font-size: 12px;
+	padding: 5px;
+	font-variant: normal;
+	border: none;	
+	background: none;
+}
+
+#templatemo_search .sub_btn {
+	float: right;
+	display: block;
+	color: #fff;
+ 	height: 33px;
+	width: 40px;
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 26px;
+	cursor: pointer;
+	border: none;
+	background: none;	
+}
+
+.sidebar_box {
+	position: relative;
+	background: #f0f0f0;
+	margin-bottom: 36px;
+	border: 1px solid #dbdbdb
+}
+.sidebar_box h3 { font-size: 14px; font-weight: 700; padding: 0 10px 0 35px; margin: 0; width: 185px; height: 33px; line-height: 33px; margin-bottom: 0; background: url(images/templatemo_sidebar_header.png)  no-repeat; color: #2f2f2f }
+
+#sidebar .sidebar_box .content {
+	padding: 10px 10px 0;
+}
+
+#sidebar .sidebar_list { margin: 0; padding: 0 0 10px; list-style: none; }
+#sidebar .sidebar_list li { display: block; margin: 0; padding: 5px 0; border-top: 1px solid #fff; border-bottom: 1px solid #d3d3d3 }
+#sidebar .sidebar_list li.first { border-top: none }
+#sidebar .sidebar_list li.last { border-bottom: none }
+#sidebar .sidebar_list li a { color: #666;   }
+#sidebar .sidebar_list li a:hover { color: #000; text-decoration: none }
+
+.bs_box { clear: both; margin-bottom: 20px }
+.bs_box img { float: left; margin-right: 10px; border: 4px solid #fff }
+.bs_box h4 { margin-bottom: 0 }
+.bs_box h4 a { font-size: 11px; color: #000; font-weight: 700}
+.bs_box .price { font-size: 12px; font-weight: 700; color: #11bdd1}
+
+
+.product_detail_price{
+	border-style:solid;
+	padding-top: 20px;
+	width: 20%;
+    height: 40px;
+    border-color: red;
+    display: block;
+    margin: auto;
+    border-width: 5px;
+    border-radius: 3px;	
+}
+
+.product_detail_border{	
+	border-style:solid;
+	padding-bottom: 10px;
+	padding-top: 40px;
+	background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+	border-radius: 10px;
+}
+
+.product_box {
+	float: left;
+	width: 47%;
+	height: 150px;
+	text-align: center;
+	margin: 0 2% 10px 0;
+	padding-bottom: 20px;
+	
+	/* แต่งกรอบอย่างละเอียด */
+	border-color:#6CF;
+	border-style:solid;
+	/* จบส่วนของ การแสดงเส้น  */
+	/* ส่วนของ gradient */
+	background: rgb(254,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(210,235,249,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(100%,rgba(210,235,249,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(210,235,249,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#d2ebf9',GradientType=0 ); /* IE6-9 */
+	/* จบ ส่วนของ gradient */
+	/* ส่วนการแสดง ผล radius*/
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+   /*สบ ส่วนการแสดง ผล radius*/
+	/*ส่วนของ shadow */
+	-webkit-box-shadow: 0px 0px 5px 5px rgba(200, 197, 200, 1);
+	box-shadow: 0px 0px 5px 5px rgba(200, 197, 200, 1); 
+	 /* จบ ส่วนของ shadow */
+   }
+
+.product_box img {
+	margin-bottom: 5px;
+	width:79px;
+	height:39px;
+	float: left;
+}
+.product_box h3 {
+	font-size: 11px;
+	color: #000;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.product_box .product_price {
+	color: #11bdd1;
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.product_box .addtocart {
+	float: right;
+	display: block;
+}
+.product_box .detail {
+	float: left;
+	display: block;
+}
+
+#contact_form { padding: 0; width: 300px; margin-bottom: 40px }
+#contact_form form { margin: 0px; padding: 0px; }
+
+#contact_form form .input_field { 
+	font-family: Arial, Helvetica, sans-serif;
+	width: 270px; 
+	padding: 5px; 
+	color: #808b98;
+	background: #fff;
+	border: 1px solid #dedede; 
+}
+
+#contact_form form label { display: block; width: 100px; margin-right: 12px; font-size: 11px }
+
+#contact_form form textarea { 
+	font-family: Arial, Helvetica, sans-serif;
+	width: 270px; 
+	height: 200px; 
+	padding: 5px; 
+	color: #808b98;
+	background: #fff; 
+	border: 1px solid #dedede; 
+}
+
+#contact_form form .submit_btn { 
+	display: block; 
+	padding: 5px 12px; 
+	text-align: center; 
+	text-decoration: none; 
+	font-weight: bold;
+	background-color: #000; 
+	border: 1px solid #fff; 
+	color: #fff; 
+	font-size:11px; 
+	cursor: pointer;
+}
+
+.content_half { width: 320px }
+.content_13 { width: 220px; margin-right: 10px }
+
+.faqs p { margin-bottom: 20px }
+.faqs h5 { margin-bottom: 5px }
+
+#templatemo_footer {
+	color: #999
+}
+#templatemo_footer a {
+	color: #fff;
+}
+
+/*============================*/
+/*=== Custom Slider Styles ===*/
+/*============================*/
+#slider-wrapper {
+	float: left;
+	width: 630px;
+	height: 300px;
+	margin-right: 20px;
+	margin-bottom: 60px;
+}
+
+#slider {
+	position:relative;
+    width: 620px;
+    height: 300px;
+	background:url(images/loading.gif) no-repeat 50% 50%;
+}
+#slider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#slider a {
+	border:0;
+	display:block;
+}
+
+.nivo-controlNav {
+	position:absolute;
+	right: 10px;
+	bottom: -30px;
+}
+.nivo-controlNav a {
+	display:block;
+	width:14px;
+	height:18px;
+	background:url(images/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.nivo-controlNav a.active {
+	background-position:0 -18px;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(images/arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+a.nivo-prevNav {
+	left:15px;
+}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a { 
+    color:#efe9d1;
+    text-decoration:underline;
+}
