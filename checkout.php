@@ -1,5 +1,44 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php
+include_once("./database/db.php");
+$db = new Database();
+$con = $db->connect();
+function userLogin($email, $password)
+{
+    global $con;
+    $pre_stmt = $con->prepare("SELECT uid,email,password FROM users WHERE email = ?");
+    $pre_stmt->bind_param("s", $email);
+    $pre_stmt->execute() or die($con->error);
+    $result = $pre_stmt->get_result();
+
+    if ($result->num_rows < 1) {
+        return "NOT_REGISTERD";
+    } else {
+        $row = $result->fetch_assoc();
+        if (password_verify($password, $row["password"])) {
+            $_SESSION["uid"] = $row["uid"];
+            $_SESSION["email"] = $row["email"];
+            return "LOGIN_SUCCESS";
+        } else {
+            return "PASSWORD_NOT_MATCHED";
+        }
+    }
+}
+
+if (isset($_POST["email"])) {
+    if (isset($_POST["password"])) {
+        $returns = userLogin($_POST["email"], $_POST["password"]);
+        if ($returns != "LOGIN_SUCCESS") {
+            echo "<script>
+                    alert('$returns');
+                    window.location.href='".DOMAIN."/login/login.php';
+                </script>";
+        } else {
+            $_SESSION["user_login"] = $_SESSION["uid"];
+        }
+    }
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -13,17 +52,14 @@
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/ddsmoothmenu.js">
-
         /***********************************************
-        * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-        * This notice MUST stay intact for legal use
-        * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-        ***********************************************/
-
+         * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+         * This notice MUST stay intact for legal use
+         * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+         ***********************************************/
     </script>
 
     <script type="text/javascript">
-
         ddsmoothmenu.init({
             mainmenuid: "top_nav", //menu DIV id
             orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
@@ -31,7 +67,6 @@
             //customtheme: ["#1c5a80", "#18374a"],
             contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
         })
-
     </script>
     <!-- จบ -->
 
@@ -107,10 +142,8 @@
                 </div> <!-- end of ddsmoothmenu -->
                 <div id="templatemo_search">
                     <form action="#" method="get">
-                        <input type="text" value=" " name="keyword" id="keyword" title="keyword"
-                            onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
-                        <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search"
-                            class="sub_btn" />
+                        <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                        <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn" />
                     </form>
                 </div>
             </div> <!-- END of templatemo_menubar -->
@@ -134,7 +167,7 @@
                                     <th colspan="2">เครื่องมือ</th>
                                 </tr>
                             </thead>
-                            <tfoot>
+                            <!-- <tfoot>
                                 <tr>
                                     <td colspan="7">
                                         <div id="paging">
@@ -259,7 +292,7 @@
                                     <td>แก้ไข</td>
                                     <td>ลบทิ้ง</td>
                                 </tr>
-                            </tbody>
+                            </tbody> -->
                         </table>
                     </div><br>
                 </div>
@@ -271,9 +304,7 @@
     <!-- ส่วนท้าย -->
     <div id="background_footer">
         <div id="templatemo_footer">
-            <p><a href="index.php">หน้าแรก</a> | <a href="products.php">หมวดหมู่เบอร์</a> | <a
-                    href="about.php">วิธีสั่งซื้อ</a> | <a href="faqs.php">ติดต่อเรา</a> | <a
-                    href="Login/login.php">Admin</a>
+            <p><a href="index.php">หน้าแรก</a> | <a href="products.php">หมวดหมู่เบอร์</a> | <a href="about.php">วิธีสั่งซื้อ</a> | <a href="faqs.php">ติดต่อเรา</a> | <a href="Login/login.php">Admin</a>
             </p>
             Copyright © 2072 <a href="#">KlangBer.com</a> <!-- Credit: www.templatemo.com -->
         </div> <!-- END of templatemo_footer -->
