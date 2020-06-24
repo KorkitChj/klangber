@@ -30,12 +30,32 @@ if (isset($_POST["email"])) {
         if ($returns != "LOGIN_SUCCESS") {
             echo "<script>
                     alert('$returns');
-                    window.location.href='".DOMAIN."/login/login.php';
+                    window.location.href='" . DOMAIN . "/login/login.php';
                 </script>";
         } else {
             $_SESSION["user_login"] = $_SESSION["uid"];
         }
     }
+}
+
+function get_network()
+{
+    global $con;
+    $network = "SELECT network FROM network GROUP BY network ORDER BY network ASC";
+    $statement3 = $con->prepare($network);
+    $statement3->execute();
+    $result3 = $statement3->get_result();
+    return $result3;
+}
+
+function get_type()
+{
+    global $con;
+    $type = "SELECT type FROM type GROUP BY type ORDER BY type ASC";
+    $statement4 = $con->prepare($type);
+    $statement4->execute();
+    $result4 = $statement4->get_result();
+    return $result4;
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -48,16 +68,8 @@ if (isset($_POST["email"])) {
     <meta name="description" content="" />
     <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
 
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.7/css/fixedHeader.bootstrap4.min.css" />
-
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/ddsmoothmenu.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/fixedheader/3.1.7/js/dataTables.fixedHeader.min.js"></script>
 
     <script type="text/javascript">
         ddsmoothmenu.init({
@@ -140,12 +152,12 @@ if (isset($_POST["email"])) {
                     </ul>
                     <br style="clear: left" />
                 </div> <!-- end of ddsmoothmenu -->
-                <div id="templatemo_search">
+                <!-- <div id="templatemo_search">
                     <form action="#" method="get">
                         <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
                         <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn" />
                     </form>
-                </div>
+                </div> -->
             </div> <!-- END of templatemo_menubar -->
 
             <div id="templatemo_main_table">
@@ -156,129 +168,42 @@ if (isset($_POST["email"])) {
                         <button class="button">+</button>
                     </div><br><br><br><br>
                     <div class="datagrid">
-                        <table>
+                        <table id="phone_number" width="100%">
                             <thead>
                                 <tr>
                                     <th>เบอร์โทรศัพท์</th>
                                     <th>ผลรวม</th>
                                     <th>ราคา</th>
-                                    <th>เครื่อข่าย</th>
-                                    <th>หมวดหมู่เบอร์</th>
-                                    <th colspan="2">เครื่องมือ</th>
+                                    <th>รายละเอียด</th>
+                                    <th width="5px">เครือข่าย
+                                        <select name="network_filter" id="network_filter" class="form-control form-control-sm">
+                                            <option value="">ทั้งหมด</option>
+                                            <?php
+                                            $value4 = get_network();
+
+                                            while ($network = $value4->fetch_assoc()) {
+                                                echo '<option value="' . $network["network"] . '">' . $network["network"] . '</option>';
+                                            }
+                                            ?>
+                                        </select>
+                                    </th>
+                                    <th width="5px">ประเภท
+                                        <select name="type_filter" id="type_filter" class="form-control form-control-sm">
+                                            <option value="">ทั้งหมด</option>
+                                            <?php
+                                            $value5 = get_type();
+
+                                            while ($type = $value5->fetch_assoc()) {
+                                                echo '<option value="' . $type["type"] . '">' . $type["type"] . '</option>';
+                                            }
+                                            ?>
+                                        </select>
+                                    </th>
+                                    <th>เครื่องมือ</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>093-6556550</td>
-                                    <td>50</td>
-                                    <td>18,000 บาท</td>
-                                    <td>dtac</td>
-                                    <td>เบอร์ลงท้าย</td>
-                                    <td>แก้ไข</td>
-                                    <td>ลบทิ้ง</td>
-                                </tr>
-                                <tr class="alt">
-                                    <td>093-6556550</td>
-                                    <td>50</td>
-                                    <td>18,000 บาท</td>
-                                    <td>dtac</td>
-                                    <td>เบอร์ลงท้าย</td>
-                                    <td>แก้ไข</td>
-                                    <td>ลบทิ้ง</td>
-                                </tr>
-                                <tr>
-                                    <td>093-6556550</td>
-                                    <td>50</td>
-                                    <td>18,000 บาท</td>
-                                    <td>dtac</td>
-                                    <td>เบอร์ลงท้าย</td>
-                                    <td>แก้ไข</td>
-                                    <td>ลบทิ้ง</td>
-                                </tr>
-                                <tr class="alt">
-                                    <td>093-6556550</td>
-                                    <td>50</td>
-                                    <td>18,000 บาท</td>
-                                    <td>dtac</td>
-                                    <td>เบอร์ลงท้าย</td>
-                                    <td>แก้ไข</td>
-                                    <td>ลบทิ้ง</td>
-                                </tr>
-                                <tr>
-                                    <td>093-6556550</td>
-                                    <td>50</td>
-                                    <td>18,000 บาท</td>
-                                    <td>dtac</td>
-                                    <td>เบอร์ลงท้าย</td>
-                                    <td>แก้ไข</td>
-                                    <td>ลบทิ้ง</td>
-                                </tr>
-                                <tr class="alt">
-                                    <td>093-6556550</td>
-                                    <td>50</td>
-                                    <td>18,000 บาท</td>
-                                    <td>dtac</td>
-                                    <td>เบอร์ลงท้าย</td>
-                                    <td>แก้ไข</td>
-                                    <td>ลบทิ้ง</td>
-                                </tr>
-                                <tr>
-                                    <td>093-6556550</td>
-                                    <td>50</td>
-                                    <td>18,000 บาท</td>
-                                    <td>dtac</td>
-                                    <td>เบอร์ลงท้าย</td>
-                                    <td>แก้ไข</td>
-                                    <td>ลบทิ้ง</td>
-                                </tr>
-                                <tr class="alt">
-                                    <td>093-6556550</td>
-                                    <td>50</td>
-                                    <td>18,000 บาท</td>
-                                    <td>dtac</td>
-                                    <td>เบอร์ลงท้าย</td>
-                                    <td>แก้ไข</td>
-                                    <td>ลบทิ้ง</td>
-                                </tr>
-                                <tr>
-                                    <td>093-6556550</td>
-                                    <td>50</td>
-                                    <td>18,000 บาท</td>
-                                    <td>dtac</td>
-                                    <td>เบอร์ลงท้าย</td>
-                                    <td>แก้ไข</td>
-                                    <td>ลบทิ้ง</td>
-                                </tr>
-                                <tr class="alt">
-                                    <td>093-6556550</td>
-                                    <td>50</td>
-                                    <td>18,000 บาท</td>
-                                    <td>dtac</td>
-                                    <td>เบอร์ลงท้าย</td>
-                                    <td>แก้ไข</td>
-                                    <td>ลบทิ้ง</td>
-                                </tr>
-                                <tr>
-                                    <td>093-6556550</td>
-                                    <td>50</td>
-                                    <td>18,000 บาท</td>
-                                    <td>dtac</td>
-                                    <td>เบอร์ลงท้าย</td>
-                                    <td>แก้ไข</td>
-                                    <td>ลบทิ้ง</td>
-                                </tr>
-                                <tr class="alt">
-                                    <td>093-6556550</td>
-                                    <td>50</td>
-                                    <td>18,000 บาท</td>
-                                    <td>dtac</td>
-                                    <td>เบอร์ลงท้าย</td>
-                                    <td>แก้ไข</td>
-                                    <td>ลบทิ้ง</td>
-                                </tr>
-                            </tbody>
                         </table>
-                    </div><br>
+                    </div>
                 </div>
             </div>
             <div class="cleaner"></div>
@@ -295,7 +220,11 @@ if (isset($_POST["email"])) {
     </div>
 
     </div>
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="js/ddsmoothmenu.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <!--phone_number_retrieve.js-->
+    <script type="text/javascript" src="./js/phone_number_retrieve.js"></script>
 </body>
 
 </html>
