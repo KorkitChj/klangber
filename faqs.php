@@ -1,5 +1,4 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -13,17 +12,14 @@
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/ddsmoothmenu.js">
-
         /***********************************************
-        * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-        * This notice MUST stay intact for legal use
-        * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-        ***********************************************/
-
+         * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+         * This notice MUST stay intact for legal use
+         * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+         ***********************************************/
     </script>
 
     <script type="text/javascript">
-
         ddsmoothmenu.init({
             mainmenuid: "top_nav", //menu DIV id
             orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
@@ -31,7 +27,6 @@
             //customtheme: ["#1c5a80", "#18374a"],
             contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
         })
-
     </script>
 
 </head>
@@ -39,6 +34,7 @@
 <body>
 
     <div id="templatemo_body_wrapper">
+        <div class="modalx" style="display: none;"></div>
         <!-- ส่วน header -->
         <div id="background_header">
             <div id="templatemo_header">
@@ -75,20 +71,16 @@
                     </ul>
                     <br style="clear: left" />
                 </div> <!-- end of ddsmoothmenu -->
-                <div id="templatemo_search">
-                    <form action="#" method="get">
-                        <input type="text" value=" " name="keyword" id="keyword" title="keyword"
-                            onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
-                        <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search"
-                            class="sub_btn" />
-                    </form>
-                </div>
+                <?php include_once('./data_process/form_phone_number_search.php'); ?>
             </div> <!-- END of templatemo_menubar -->
 
             <div id="templatemo_main">
                 <div id="content" class="float_b faqs">
-                    <h1><img src="images/contact.png" width="820" height="125" /><img src="images/Cheers.png"
-                            width="720" height="300" /></h1>
+                    <div id="gridContainer"></div>
+
+                    <!-- ขึ้นบรรทัดใหม่ -->
+                    <div class="cleaner"></div>
+                    <h1><img src="images/contact.png" width="820" height="125" /><img src="images/Cheers.png" width="720" height="300" /></h1>
                     <h5>&nbsp;</h5>
                 </div>
                 <div class="cleaner"></div>
@@ -98,13 +90,12 @@
         <!-- ส่วนท้าย -->
         <div id="background_footer">
             <div id="templatemo_footer">
-                <p><a href="index.php">หน้าแรก</a> | <a href="products.php">หมวดหมู่เบอร์</a> | <a href="about.php">วิธีสั่งซื้อ</a> | <a href="faqs.php">ติดต่อเรา</a> | <a
-                        href="Login/login.php">Admin</a> 
+                <p><a href="index.php">หน้าแรก</a> | <a href="products.php">หมวดหมู่เบอร์</a> | <a href="about.php">วิธีสั่งซื้อ</a> | <a href="faqs.php">ติดต่อเรา</a> | <a href="Login/login.php">Admin</a>
                 </p>
                 Copyright © 2072 <a href="#">KlangBer.com</a> <!-- Credit: www.templatemo.com -->
             </div> <!-- END of templatemo_footer -->
         </div>
-
+        <script typt="text/javascript" src="js/phone_number_search.js"></script>
     </div> <!-- END of templatemo_body_wrapper -->
 
 </body>

@@ -66,6 +66,7 @@ function get_type()
     <title>Shoes Store - Check Out</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet" type="text/css" /> -->
     <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
 
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />

@@ -1,3 +1,9 @@
+<?php
+$tel = $_GET['t'];
+$network = $_GET['n'];
+$price = $_GET['p'];
+
+?>
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -96,11 +102,11 @@
                     <h1><img src="images/10.png" width="518" height="187" /></h1>
 
                     <div class="product_detail_border">
-                        <img src="images/product/dtac.png" width="147" height="79" hspace="20" />
+                        <img src="<?php echo "images/product/".($network == 'TRUE' ? 'true.png' : ($network == 'AIS' ? 'ais.png' : 'dtac.png') )?>" width="147" height="79" hspace="20" />
                         <p>&nbsp;</p>
-                        <h1> 089-9999999</h1>
+                        <h1><?php echo $tel ?></h1>
                         <div class="product_detail_price">
-                            <h4>ราคา 80 บาท</h4>
+                            <h4>ราคา <?php echo $price ?> บาท</h4>
                         </div>
 
                         <p>&nbsp;</p>
