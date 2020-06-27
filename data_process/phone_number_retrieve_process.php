@@ -62,7 +62,7 @@ while ($row = $result2->fetch_assoc()) {
     $sub_array[]  = $row["detail"];
     $sub_array[]  = $row["network"];
     $sub_array[]  = $row["type"];
-    $sub_array[]  = '<button type="button" data-toggle="modal" data-target="#edit_phonenumber_Modal" onclick="editPhonenumber(' . $row['pnid'] . ')">แก้ไข</button>
+    $sub_array[]  = '<button  onclick="location.href=\''.DOMAIN.'/editTel.php?id='.$row['pnid'].'\'">แก้ไข</button>
     <button type="button" onclick="removePhonenumber(' . $row['pnid'].')">ลบ</button>';
 
     $data[] = $sub_array;

@@ -56,8 +56,8 @@ include_once("./data_process/phone_number_fetch.php");
             <div id="templatemo_menubar">
                 <div id="top_nav" class="ddsmoothmenu">
                     <ul>
-                        <li><a href="index.php" class="selected">หน้าแรก</a></li>
-                        <li><a href="products.php">หมวดหมู่เบอร์</a>
+                        <li><a href="index.php">หน้าแรก</a></li>
+                        <li><a href="products.php" class="selected">หมวดหมู่เบอร์</a>
                             <ul>
                                 <li><a href="#tel1">เบอร์มงคล</a></li>
                                 <li><a href="#tel2">เบอร์มงคลท้าย</a></li>
@@ -87,7 +87,7 @@ include_once("./data_process/phone_number_fetch.php");
                     <a name="tel1">
                         <h1> เบอร์มงคล<img src="images/idea.png" width="65" height="56" /></h1>
                     </a>
-                    <?php while ($row2 = $result2->fetch_assoc()) { ?>
+                    <?php $result2 = getBertel("เบอร์มงคล"); while ($row2 = $result2->fetch_assoc()) { ?>
                         <div class="product_box">
                             <h3>&nbsp;</h3>
                             <h2><a href="productdetail.php?n=<?php echo $row2['network'] ?>&t=<?php echo $row2['tel'] ?>&p=<?php echo $row2['price'] ?>"><?php echo $row2['tel'] ?></a></h2>
@@ -104,7 +104,7 @@ include_once("./data_process/phone_number_fetch.php");
                     <a name="tel2">
                         <h1> เบอร์มงคลท้าย<img src="images/idea.png" width="65" height="56" /></h1>
                     </a>
-                    <?php while ($row3 = $result3->fetch_assoc()) { ?>
+                    <?php $result3 = getBertel("เบอร์มงคลท้าย"); while ($row3 = $result3->fetch_assoc()) { ?>
                         <div class="product_box">
                             <h3>&nbsp;</h3>
                             <h2><a href="productdetail.php?n=<?php echo $row3['network'] ?>&t=<?php echo $row3['tel'] ?>&p=<?php echo $row3['price'] ?>"><?php echo $row3['tel'] ?></a></h2>
@@ -121,7 +121,7 @@ include_once("./data_process/phone_number_fetch.php");
                     <a name="tel3">
                         <h1> เบอร์หงส์มังกร<img src="images/idea.png" width="65" height="56" /></h1>
                     </a>
-                    <?php while ($row4 = $result4->fetch_assoc()) { ?>
+                    <?php $result4 = getBertel("เบอร์หงส์มังกร"); while ($row4 = $result4->fetch_assoc()) { ?>
                         <div class="product_box">
                             <h3>&nbsp;</h3>
                             <h2><a href="productdetail.php?n=<?php echo $row4['network'] ?>&t=<?php echo $row4['tel'] ?>&p=<?php echo $row4['price'] ?>"><?php echo $row4['tel'] ?></a></h2>
@@ -138,7 +138,7 @@ include_once("./data_process/phone_number_fetch.php");
                     <a name="tel4">
                         <h1> เบอร์เรียง<img src="images/idea.png" width="65" height="56" /></h1>
                     </a>
-                    <?php while ($row5 = $result5->fetch_assoc()) { ?>
+                    <?php $result5 = getBertel("เบอร์เรียง"); while ($row5 = $result5->fetch_assoc()) { ?>
                         <div class="product_box">
                             <h3>&nbsp;</h3>
                             <h2><a href="productdetail.php?n=<?php echo $row5['network'] ?>&t=<?php echo $row5['tel'] ?>&p=<?php echo $row5['price'] ?>"><?php echo $row5['tel'] ?></a></h2>
@@ -155,7 +155,7 @@ include_once("./data_process/phone_number_fetch.php");
                     <a name="tel5">
                         <h1> เบอร์ตอง<img src="images/idea.png" width="65" height="56" /></h1>
                     </a>
-                    <?php while ($row6 = $result6->fetch_assoc()) { ?>
+                    <?php $result6 = getBertel("เบอร์ตอง"); while ($row6 = $result6->fetch_assoc()) { ?>
                         <div class="product_box">
                             <h3>&nbsp;</h3>
                             <h2><a href="productdetail.php?n=<?php echo $row6['network'] ?>&t=<?php echo $row6['tel'] ?>&p=<?php echo $row6['price'] ?>"><?php echo $row6['tel'] ?></a></h2>
@@ -172,7 +172,7 @@ include_once("./data_process/phone_number_fetch.php");
                     <a name="tel6">
                         <h1> เบอร์โฟร์<img src="images/idea.png" width="65" height="56" /></h1>
                     </a>
-                    <?php while ($row7 = $result7->fetch_assoc()) { ?>
+                    <?php $result7 = getBertel("เบอร์โฟร์"); while ($row7 = $result7->fetch_assoc()) { ?>
                         <div class="product_box">
                             <h3>&nbsp;</h3>
                             <h2><a href="productdetail.php?n=<?php echo $row7['network'] ?>&t=<?php echo $row7['tel'] ?>&p=<?php echo $row7['price'] ?>"><?php echo $row7['tel'] ?></a></h2>

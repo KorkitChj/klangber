@@ -53,7 +53,7 @@
             <div id="templatemo_menubar">
                 <div id="top_nav" class="ddsmoothmenu">
                     <ul>
-                        <li><a href="index.php" class="selected">หน้าแรก</a></li>
+                        <li><a href="index.php">หน้าแรก</a></li>
                         <li><a href="products.php">หมวดหมู่เบอร์</a>
                             <ul>
                                 <li><a href="products.php #tel1">เบอร์มงคล</a></li>
@@ -64,7 +64,7 @@
                                 <li><a href="products.php #tel6">เบอร์โฟร์</a></li>
                             </ul>
                         </li>
-                        <li><a href="about.php">วิธีสั่งซื้อ</a></li>
+                        <li><a href="about.php" class="selected">วิธีสั่งซื้อ</a></li>
                         <li><a href="faqs.php">ติดต่อเรา</a></li>
                         <li><a href="Login/login.php">Admin</a></li>
                     </ul>
