@@ -5,7 +5,7 @@ $con = $db->connect();
 
 if (isset($_POST['submit'])) {
     $tel = $_POST['tel'];
-    $sum = $_POST['sum'];
+    //$sum = $_POST['sum'];
     $price = $_POST['price'];
     $detail = $_POST['detail'];
     $network = $_POST['network'];
@@ -26,6 +26,7 @@ if (isset($_POST['submit'])) {
         $row = $result->fetch_assoc();
         return $row[$id];
     }
+    $sum = 1;
     $typeID = queryId("tid","type","type",$type);
     $netID = queryId("nid","network","network",$network);
     $sql2 = "UPDATE phone_number SET tel=?,sum=?,price=?,detail=?,tid=?,nid=? WHERE pnid=?";

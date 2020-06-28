@@ -5,7 +5,7 @@ $con = $db->connect();
 
 if (isset($_POST['submit'])) {
     $tel = $_POST['tel'];
-    $sum = $_POST['sum'];
+    //$sum = $_POST['sum'];
     $price = $_POST['price'];
     $detail = $_POST['detail'];
     $network = $_POST['network'];
@@ -31,6 +31,7 @@ if (isset($_POST['submit'])) {
     $statement2 = $con->prepare("INSERT INTO phone_number (tel,sum,price,detail,tid,nid,did,stid) VALUES (?,?,?,?,?,?,?,?)");
     $s = 'ssssssss';
     $a = 1;
+    $sum = array_sum(str_split($tel));
     $statement2->bind_param($s, $tel, $sum, $price, $detail, $typeID, $netID, $a, $a);
     if ($statement2->execute()) {
         echo "<script>

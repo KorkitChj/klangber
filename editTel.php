@@ -122,8 +122,8 @@ $row = $result->fetch_assoc();
                                 <fieldset>
                                     <legend><span class="number">1</span> เบอร์โทรศัพท์</legend>
                                     <input type="text" name="tel" value="<?php echo $row['tel'] ?>" required>
-                                    <legend><span class="number">2</span> ผลรวม</legend>
-                                    <input type="number" name="sum" value="<?php echo $row['sum'] ?>" required>
+                                    <!-- <legend><span class="number">2</span> ผลรวม</legend>
+                                    <input type="number" name="sum" value="<?php echo $row['sum'] ?>" required> -->
                                     <legend><span class="number">3</span> ราคา</legend>
                                     <input type="number" name="price" value="<?php echo $row['price'] ?>" required>
                                     <legend><span class="number">4</span> รายละเอียด</legend>

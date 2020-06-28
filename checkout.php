@@ -173,6 +173,10 @@
     </html>
 <?php } ?>
 <?php
+header('Cache-Control: no cache'); //no cache
+session_cache_limiter('private_no_expire'); // works
+//session_cache_limiter('public'); // works too
+//session_start();
 include_once("./database/db.php");
 $db = new Database();
 $con = $db->connect();

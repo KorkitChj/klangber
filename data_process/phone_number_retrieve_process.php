@@ -53,6 +53,7 @@ $totalRecords = $result->num_rows;
 $statement2 = $con->prepare($sqlRec);
 $statement2->execute();
 $result2 = $statement2->get_result();
+//array_sum(str_split($row["tel"]));
 $data = array();
 while ($row = $result2->fetch_assoc()) {
     $sub_array = array();
