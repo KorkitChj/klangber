@@ -37,6 +37,7 @@ $row = $result->fetch_assoc();
     <html xmlns="http://www.w3.org/1999/xhtml">
 
     <head>
+        <base href="/klangber/">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Shoes Store - Check Out</title>
         <meta name="keywords" content="" />
@@ -101,8 +102,8 @@ $row = $result->fetch_assoc();
                         </li>
                         <li><a href="about.php">วิธีสั่งซื้อ</a></li>
                         <li><a href="faqs.php">ติดต่อเรา</a></li> -->
-                            <li><a href="checkout.php" class="selected">Admin</a></li>
-                            <li><a href="<?php echo DOMAIN . '/logout.php' ?>">Logout</a></li>
+                            <li><a href="checkout" class="selected">Admin</a></li>
+                            <li><a href="<?php echo DOMAIN . '/logout' ?>">Logout</a></li>
 
                         </ul>
                         <br style="clear: left" />
@@ -152,7 +153,7 @@ $row = $result->fetch_assoc();
                                     <input type="hidden" name="key" value="<?php echo $key ?>">
                                 </fieldset>
                                 <input type="submit" value="ยืนยัน" name="submit"/>
-                                <input type="button" onclick="history.back();" value="ยกเลิก" />
+                                <input type="button" onclick="location.href='checkout'" value="ยกเลิก" />
                             </form>
                         </div>
 
@@ -165,7 +166,7 @@ $row = $result->fetch_assoc();
         <!-- ส่วนท้าย -->
         <div id="background_footer">
             <div id="templatemo_footer">
-                <p><a href="index.php">หน้าแรก</a> | <a href="products.php">หมวดหมู่เบอร์</a> | <a href="about.php">วิธีสั่งซื้อ</a> | <a href="faqs.php">ติดต่อเรา</a> | <a href="Login/login.php">Admin</a>
+                <p><a href="home">หน้าแรก</a> | <a href="products">หมวดหมู่เบอร์</a> | <a href="about">วิธีสั่งซื้อ</a> | <a href="faqs">ติดต่อเรา</a> | <a href="loginx">Admin</a>
                 </p>
                 Copyright © 2072 <a href="#">KlangBer.com</a> <!-- Credit: www.templatemo.com -->
             </div> <!-- END of templatemo_footer -->

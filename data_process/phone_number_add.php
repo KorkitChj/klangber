@@ -36,7 +36,7 @@ if (isset($_POST['submit'])) {
     if ($statement2->execute()) {
         echo "<script>
         alert('Success');
-        window.location.href='" . DOMAIN . "/checkout.php';
+        window.location.href='" . DOMAIN . "/checkout';
     </script>";
     } else {
         echo "<script>

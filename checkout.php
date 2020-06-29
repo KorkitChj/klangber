@@ -14,7 +14,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
         <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
 
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             ddsmoothmenu.init({
                 mainmenuid: "top_nav", //menu DIV id
                 orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
@@ -22,7 +22,7 @@
                 //customtheme: ["#1c5a80", "#18374a"],
                 contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
             })
-        </script>
+        </script> -->
         <!-- จบ -->
 
         <!-- css ปุ่ม +  -->
@@ -90,8 +90,8 @@
                         </li>
                         <li><a href="about.php">วิธีสั่งซื้อ</a></li>
                         <li><a href="faqs.php">ติดต่อเรา</a></li> -->
-                            <li><a href="checkout.php" class="selected">Admin</a></li>
-                            <li><a href="<?php echo DOMAIN . '/logout.php' ?>">Logout</a></li>
+                            <li><a href="checkout" class="selected">Admin</a></li>
+                            <li><a href="<?php echo DOMAIN . '/logout' ?>">Logout</a></li>
                         </ul>
                         <br style="clear: left" />
                     </div> <!-- end of ddsmoothmenu -->
@@ -108,7 +108,7 @@
                     <div id="content_table" class="float_b">
                         <h2>รายการเบอร์<img src="images/pencil.png" width="53" height="66" /></h2>
                         <div id="position_button">
-                            <button class="button" onclick="location.href='addTel.php'">+</button>
+                            <button class="button" onclick="location.href='addTel'">+</button>
                         </div><br><br><br><br>
                         <div class="datagrid">
                             <table id="phone_number" width="100%">
@@ -156,7 +156,7 @@
         <!-- ส่วนท้าย -->
         <div id="background_footer">
             <div id="templatemo_footer">
-                <p><a href="index.php">หน้าแรก</a> | <a href="products.php">หมวดหมู่เบอร์</a> | <a href="about.php">วิธีสั่งซื้อ</a> | <a href="faqs.php">ติดต่อเรา</a> | <a href="Login/login.php">Admin</a>
+                <p><a href="home">หน้าแรก</a> | <a href="products">หมวดหมู่เบอร์</a> | <a href="about">วิธีสั่งซื้อ</a> | <a href="faqs">ติดต่อเรา</a> | <a href="Loginx">Admin</a>
                 </p>
                 Copyright © 2072 <a href="#">KlangBer.com</a> <!-- Credit: www.templatemo.com -->
             </div> <!-- END of templatemo_footer -->

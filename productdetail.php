@@ -4,11 +4,11 @@ $network = $_GET['n'];
 $price = $_GET['p'];
 
 ?>
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+    <base href="/klangber/">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Shoes Store - Product Detail</title>
     <meta name="keywords" content="" />
@@ -19,17 +19,14 @@ $price = $_GET['p'];
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/ddsmoothmenu.js">
-
         /***********************************************
-        * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-        * This notice MUST stay intact for legal use
-        * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-        ***********************************************/
-
+         * Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+         * This notice MUST stay intact for legal use
+         * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+         ***********************************************/
     </script>
 
     <script type="text/javascript">
-
         ddsmoothmenu.init({
             mainmenuid: "top_nav", //menu DIV id
             orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
@@ -37,10 +34,9 @@ $price = $_GET['p'];
             //customtheme: ["#1c5a80", "#18374a"],
             contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
         })
-
     </script>
 
-    <script type="text/javascript" src="js/jquery-1-4-2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
     <link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" />
     <script type="text/JavaScript" src="js/slimbox2.js"></script>
 
@@ -68,29 +64,27 @@ $price = $_GET['p'];
             <div id="templatemo_menubar">
                 <div id="top_nav" class="ddsmoothmenu">
                     <ul>
-                        <li><a href="index.php" class="selected">หน้าแรก</a></li>
-                        <li><a href="products.php">หมวดหมู่เบอร์</a>
+                        <li><a href="home" class="selected">หน้าแรก</a></li>
+                        <li><a href="products">หมวดหมู่เบอร์</a>
                             <ul>
-                                <li><a href="products.php #tel1">เบอร์มงคล</a></li>
-                                <li><a href="products.php #tel2">เบอร์มงคลท้าย</a></li>
-                                <li><a href="products.php #tel3">เบอร์หงส์มังกร</a></li>
-                                <li><a href="products.php #tel4">เบอร์เรียง</a></li>
-                                <li><a href="products.php #tel5">เบอร์ตอง</a></li>
-                                <li><a href="products.php #tel6">เบอร์โฟร์</a></li>
+                                <li><a href="products#tel1">เบอร์มงคล</a></li>
+                                <li><a href="products#tel2">เบอร์มงคลท้าย</a></li>
+                                <li><a href="products#tel3">เบอร์หงส์มังกร</a></li>
+                                <li><a href="products#tel4">เบอร์เรียง</a></li>
+                                <li><a href="products#tel5">เบอร์ตอง</a></li>
+                                <li><a href="products#tel6">เบอร์โฟร์</a></li>
                             </ul>
                         </li>
-                        <li><a href="about.php">วิธีสั่งซื้อ</a></li>
-                        <li><a href="faqs.php">ติดต่อเรา</a></li>
-                        <li><a href="Login/login.php">Admin</a></li>
+                        <li><a href="about">วิธีสั่งซื้อ</a></li>
+                        <li><a href="faqs">ติดต่อเรา</a></li>
+                        <li><a href="loginx">Admin</a></li>
                     </ul>
                     <br style="clear: left" />
                 </div> <!-- end of ddsmoothmenu -->
                 <div id="templatemo_search">
                     <form action="#" method="get">
-                        <input type="text" value=" " name="keyword" id="keyword" title="keyword"
-                            onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
-                        <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search"
-                            class="sub_btn" />
+                        <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+                        <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn" />
                     </form>
                 </div>
             </div> <!-- END of templatemo_menubar -->
@@ -102,7 +96,7 @@ $price = $_GET['p'];
                     <h1><img src="images/10.png" width="518" height="187" /></h1>
 
                     <div class="product_detail_border">
-                        <img src="<?php echo "images/product/".($network == 'TRUE' ? 'true.png' : ($network == 'AIS' ? 'ais.png' : 'dtac.png') )?>" width="147" height="79" hspace="20" />
+                        <img src="<?php echo "images/product/" . ($network == 'TRUE' ? 'true.png' : ($network == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" width="147" height="79" hspace="20" />
                         <p>&nbsp;</p>
                         <h1><?php echo $tel ?></h1>
                         <div class="product_detail_price">
@@ -110,8 +104,7 @@ $price = $_GET['p'];
                         </div>
 
                         <p>&nbsp;</p>
-                        <p><img src="images/facebook.png" width="51" height="53" /> <img src="images/line.jpg" width="52"
-                                height="53" /> <img src="images/icon.png" width="53" height="53" /></p>
+                        <p><img src="images/facebook.png" width="51" height="53" /> <img src="images/line.jpg" width="52" height="53" /> <img src="images/icon.png" width="53" height="53" /></p>
                         <p>&nbsp;</p>
 
                         <p>ติดต่อเรา: 066-1689999,0644566651</p>
@@ -130,8 +123,7 @@ $price = $_GET['p'];
         <!-- ส่วนท้าย -->
         <div id="background_footer">
             <div id="templatemo_footer">
-                <p><a href="#">Home</a> | <a href="#">Products</a> | <a href="#">About</a> | <a href="#">FAQs</a> | <a
-                        href="#">Checkout</a> | <a href="#">Contact Us</a>
+                <p><a href="home">Home</a> | <a href="products">Products</a> | <a href="about">About</a> | <a href="faqs">FAQs</a> | <a href="checkout">Checkout</a> | <a href="checkout">Contact Us</a>
                 </p>
                 Copyright © 2072 <a href="#">Your Company Name</a> <!-- Credit: www.templatemo.com -->
             </div> <!-- END of templatemo_footer -->

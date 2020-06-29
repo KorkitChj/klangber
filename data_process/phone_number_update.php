@@ -35,12 +35,12 @@ if (isset($_POST['submit'])) {
     if($statement2->execute()){
         echo "<script>
         alert('Success');
-        window.location.href='" . DOMAIN . "/checkout.php';
+        window.location.href='" . DOMAIN . "/checkout';
     </script>";
     }else{
         echo "<script>
         alert('Failed');
-        window.location.href='" . DOMAIN . "/editTel.php?id=$key';
+        window.location.href='" . DOMAIN . "/editTel/$key';
     </script>";
     }
 }

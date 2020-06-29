@@ -58,20 +58,20 @@ include_once("./data_process/phone_number_fetch.php");
         <div id="templatemo_menubar">
           <div id="top_nav" class="ddsmoothmenu">
             <ul>
-              <li><a href="index.php" class="selected">หน้าแรก</a></li>
-              <li><a href="products.php">หมวดหมู่เบอร์</a>
+              <li><a href="home" class="selected">หน้าแรก</a></li>
+              <li><a href="products">หมวดหมู่เบอร์</a>
                 <ul>
-                  <li><a href="products.php #tel1">เบอร์มงคล</a></li>
-                  <li><a href="products.php #tel2">เบอร์มงคลท้าย</a></li>
-                  <li><a href="products.php #tel3">เบอร์หงส์มังกร</a></li>
-                  <li><a href="products.php #tel4">เบอร์เรียง</a></li>
-                  <li><a href="products.php #tel5">เบอร์ตอง</a></li>
-                  <li><a href="products.php #tel6">เบอร์โฟร์</a></li>
+                  <li><a href="products#tel1">เบอร์มงคล</a></li>
+                  <li><a href="products#tel2">เบอร์มงคลท้าย</a></li>
+                  <li><a href="products#tel3">เบอร์หงส์มังกร</a></li>
+                  <li><a href="products#tel4">เบอร์เรียง</a></li>
+                  <li><a href="products#tel5">เบอร์ตอง</a></li>
+                  <li><a href="products#tel6">เบอร์โฟร์</a></li>
                 </ul>
               </li>
-              <li><a href="about.php">วิธีสั่งซื้อ</a></li>
-              <li><a href="faqs.php">ติดต่อเรา</a></li>
-              <li><a href="Login/login.php">Admin</a></li>
+              <li><a href="about">วิธีสั่งซื้อ</a></li>
+              <li><a href="faqs">ติดต่อเรา</a></li>
+              <li><a href="loginx">Admin</a></li>
             </ul>
             <br style="clear: left" />
           </div> <!-- end of ddsmoothmenu -->
@@ -110,10 +110,10 @@ include_once("./data_process/phone_number_fetch.php");
             <?php while ($row = $result->fetch_assoc()) { ?>
               <div class="product_box">
                 <h3>&nbsp;</h3>
-                <h2><a href="productdetail.php?n=<?php echo $row['network'] ?>&t=<?php echo $row['tel'] ?>&p=<?php echo $row['price'] ?>"><?php echo $row['tel'] ?></a></h2>
-                <p><a href="productdetail.php?n=<?php echo $row['network'] ?>&t=<?php echo $row['tel'] ?>&p=<?php echo $row['price'] ?>"><img src="<?php echo "images/product/" . ($row['network'] == 'TRUE' ? 'true.png' : ($row['network'] == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" hspace="20" /></a>ผลรวม <?php echo $row['sum'] ?></p>
+                <h2><a href="productdetail/<?php echo $row['network'] ?>/<?php echo $row['tel'] ?>/<?php echo $row['price'] ?>"><?php echo $row['tel'] ?></a></h2>
+                <p><a href="productdetail/<?php echo $row['network'] ?>/<?php echo $row['tel'] ?>/<?php echo $row['price'] ?>"><img src="<?php echo "images/product/" . ($row['network'] == 'TRUE' ? 'true.png' : ($row['network'] == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" hspace="20" /></a>ผลรวม <?php echo $row['sum'] ?></p>
                 <p class="product_price"><?php echo $row['price'] ?> บาท</p>
-                <a href="productdetail.php?n=<?php echo $row['network'] ?>&t=<?php echo $row['tel'] ?>&p=<?php echo $row['price'] ?>" class="addtocart"></a>
+                <a href="productdetail/<?php echo $row['network'] ?>/<?php echo $row['tel'] ?>/<?php echo $row['price'] ?>" class="addtocart"></a>
               </div>
             <?php } ?>
 
@@ -130,7 +130,7 @@ include_once("./data_process/phone_number_fetch.php");
       <!-- ส่วนท้าย -->
       <div id="background_footer">
         <div id="templatemo_footer">
-          <p><a href="index.php">หน้าแรก</a> | <a href="products.php">หมวดหมู่เบอร์</a> | <a href="about.php">วิธีสั่งซื้อ</a> | <a href="faqs.php">ติดต่อเรา</a> | <a href="Login/login.php">Admin</a>
+          <p><a href="index">หน้าแรก</a> | <a href="products">หมวดหมู่เบอร์</a> | <a href="about">วิธีสั่งซื้อ</a> | <a href="faqs">ติดต่อเรา</a> | <a href="Login/login">Admin</a>
           </p>
           Copyright © 2072 <a href="#">KlangBer.com</a> <!-- Credit: www.templatemo.com -->
         </div> <!-- END of templatemo_footer -->

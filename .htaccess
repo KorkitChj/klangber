@@ -1,0 +1,12 @@
+RewriteEngine on
+
+RewriteRule ^home?$ index.php
+RewriteRule ^products?$ products.php
+RewriteRule ^about?$ about.php
+RewriteRule ^faqs?$ faqs.php
+RewriteRule ^loginx?$ login/login.php
+RewriteRule ^checkout?$ checkout.php
+RewriteRule ^productdetail/(.*)/(.*)/(.*) productdetail.php?n=$1&t=$2&p=$3
+RewriteRule ^logout?$ logout.php
+RewriteRule ^addTel?$ addTel.php
+RewriteRule ^editTel/(.*) editTel.php?id=$1

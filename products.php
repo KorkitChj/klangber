@@ -56,20 +56,20 @@ include_once("./data_process/phone_number_fetch.php");
             <div id="templatemo_menubar">
                 <div id="top_nav" class="ddsmoothmenu">
                     <ul>
-                        <li><a href="index.php">หน้าแรก</a></li>
-                        <li><a href="products.php" class="selected">หมวดหมู่เบอร์</a>
+                        <li><a href="home">หน้าแรก</a></li>
+                        <li><a href="products" class="selected">หมวดหมู่เบอร์</a>
                             <ul>
-                                <li><a href="#tel1">เบอร์มงคล</a></li>
-                                <li><a href="#tel2">เบอร์มงคลท้าย</a></li>
-                                <li><a href="#tel3">เบอร์หงส์มังกร</a></li>
-                                <li><a href="#tel4">เบอร์เรียง</a></li>
-                                <li><a href="#tel5">เบอร์ตอง</a></li>
-                                <li><a href="#tel6">เบอร์โฟร์</a></li>
+                                <li><a href="products#tel1">เบอร์มงคล</a></li>
+                                <li><a href="products#tel2">เบอร์มงคลท้าย</a></li>
+                                <li><a href="products#tel3">เบอร์หงส์มังกร</a></li>
+                                <li><a href="products#tel4">เบอร์เรียง</a></li>
+                                <li><a href="products#tel5">เบอร์ตอง</a></li>
+                                <li><a href="products#tel6">เบอร์โฟร์</a></li>
                             </ul>
                         </li>
-                        <li><a href="about.php">วิธีสั่งซื้อ</a></li>
-                        <li><a href="faqs.php">ติดต่อเรา</a></li>
-                        <li><a href="Login/login.php">Admin</a></li>
+                        <li><a href="about">วิธีสั่งซื้อ</a></li>
+                        <li><a href="faqs">ติดต่อเรา</a></li>
+                        <li><a href="loginx">Admin</a></li>
 
                     </ul>
                     <br style="clear: left" />
@@ -90,10 +90,10 @@ include_once("./data_process/phone_number_fetch.php");
                     <?php $result2 = getBertel("เบอร์มงคล"); while ($row2 = $result2->fetch_assoc()) { ?>
                         <div class="product_box">
                             <h3>&nbsp;</h3>
-                            <h2><a href="productdetail.php?n=<?php echo $row2['network'] ?>&t=<?php echo $row2['tel'] ?>&p=<?php echo $row2['price'] ?>"><?php echo $row2['tel'] ?></a></h2>
-                            <p><a href="productdetail.php?n=<?php echo $row2['network'] ?>&t=<?php echo $row2['tel'] ?>&p=<?php echo $row2['price'] ?>"><img src="<?php echo "images/product/" . ($row2['network'] == 'TRUE' ? 'true.png' : ($row2['network'] == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" hspace="20" /></a>ผลรวม <?php echo $row2['sum'] ?></p>
+                            <h2><a href="productdetail/<?php echo $row2['network'] ?>/<?php echo $row2['tel'] ?>/<?php echo $row2['price'] ?>"><?php echo $row2['tel'] ?></a></h2>
+                            <p><a href="productdetail/<?php echo $row2['network'] ?>/<?php echo $row2['tel'] ?>/<?php echo $row2['price'] ?>"><img src="<?php echo "images/product/" . ($row2['network'] == 'TRUE' ? 'true.png' : ($row2['network'] == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" hspace="20" /></a>ผลรวม <?php echo $row2['sum'] ?></p>
                             <p class="product_price"><?php echo $row2['price'] ?> บาท</p>
-                            <a href="productdetail.php?n=<?php echo $row2['network'] ?>&t=<?php echo $row2['tel'] ?>&p=<?php echo $row2['price'] ?>" class="addtocart"></a>
+                            <a href="productdetail/<?php echo $row2['network'] ?>/<?php echo $row2['tel'] ?>/<?php echo $row2['price'] ?>" class="addtocart"></a>
                         </div>
                     <?php } ?>
 
@@ -107,10 +107,10 @@ include_once("./data_process/phone_number_fetch.php");
                     <?php $result3 = getBertel("เบอร์มงคลท้าย"); while ($row3 = $result3->fetch_assoc()) { ?>
                         <div class="product_box">
                             <h3>&nbsp;</h3>
-                            <h2><a href="productdetail.php?n=<?php echo $row3['network'] ?>&t=<?php echo $row3['tel'] ?>&p=<?php echo $row3['price'] ?>"><?php echo $row3['tel'] ?></a></h2>
-                            <p><a href="productdetail.php?n=<?php echo $row3['network'] ?>&t=<?php echo $row3['tel'] ?>&p=<?php echo $row3['price'] ?>"><img src="<?php echo "images/product/" . ($row3['network'] == 'TRUE' ? 'true.png' : ($row3['network'] == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" hspace="20" /></a>ผลรวม <?php echo $row3['sum'] ?></p>
+                            <h2><a href="productdetail/<?php echo $row3['network'] ?>/<?php echo $row3['tel'] ?>/<?php echo $row3['price'] ?>"><?php echo $row3['tel'] ?></a></h2>
+                            <p><a href="productdetail/<?php echo $row3['network'] ?>/<?php echo $row3['tel'] ?>/<?php echo $row3['price'] ?>"><img src="<?php echo "images/product/" . ($row3['network'] == 'TRUE' ? 'true.png' : ($row3['network'] == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" hspace="20" /></a>ผลรวม <?php echo $row3['sum'] ?></p>
                             <p class="product_price"><?php echo $row3['price'] ?> บาท</p>
-                            <a href="productdetail.php?n=<?php echo $row3['network'] ?>&t=<?php echo $row3['tel'] ?>&p=<?php echo $row3['price'] ?>" class="addtocart"></a>
+                            <a href="productdetail/<?php echo $row3['network'] ?>/<?php echo $row3['tel'] ?>/<?php echo $row3['price'] ?>" class="addtocart"></a>
                         </div>
                     <?php } ?>
 
@@ -124,10 +124,10 @@ include_once("./data_process/phone_number_fetch.php");
                     <?php $result4 = getBertel("เบอร์หงส์มังกร"); while ($row4 = $result4->fetch_assoc()) { ?>
                         <div class="product_box">
                             <h3>&nbsp;</h3>
-                            <h2><a href="productdetail.php?n=<?php echo $row4['network'] ?>&t=<?php echo $row4['tel'] ?>&p=<?php echo $row4['price'] ?>"><?php echo $row4['tel'] ?></a></h2>
-                            <p><a href="productdetail.php?n=<?php echo $row4['network'] ?>&t=<?php echo $row4['tel'] ?>&p=<?php echo $row4['price'] ?>"><img src="<?php echo "images/product/" . ($row4['network'] == 'TRUE' ? 'true.png' : ($row4['network'] == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" hspace="20" /></a>ผลรวม <?php echo $row4['sum'] ?></p>
+                            <h2><a href="productdetail/<?php echo $row4['network'] ?>/<?php echo $row4['tel'] ?>/<?php echo $row4['price'] ?>"><?php echo $row4['tel'] ?></a></h2>
+                            <p><a href="productdetail/<?php echo $row4['network'] ?>/<?php echo $row4['tel'] ?>/<?php echo $row4['price'] ?>"><img src="<?php echo "images/product/" . ($row4['network'] == 'TRUE' ? 'true.png' : ($row4['network'] == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" hspace="20" /></a>ผลรวม <?php echo $row4['sum'] ?></p>
                             <p class="product_price"><?php echo $row4['price'] ?> บาท</p>
-                            <a href="productdetail.php?n=<?php echo $row4['network'] ?>&t=<?php echo $row4['tel'] ?>&p=<?php echo $row4['price'] ?>" class="addtocart"></a>
+                            <a href="productdetail/<?php echo $row4['network'] ?>/<?php echo $row4['tel'] ?>/<?php echo $row4['price'] ?>" class="addtocart"></a>
                         </div>
                     <?php } ?>
 
@@ -141,10 +141,10 @@ include_once("./data_process/phone_number_fetch.php");
                     <?php $result5 = getBertel("เบอร์เรียง"); while ($row5 = $result5->fetch_assoc()) { ?>
                         <div class="product_box">
                             <h3>&nbsp;</h3>
-                            <h2><a href="productdetail.php?n=<?php echo $row5['network'] ?>&t=<?php echo $row5['tel'] ?>&p=<?php echo $row5['price'] ?>"><?php echo $row5['tel'] ?></a></h2>
-                            <p><a href="productdetail.php?n=<?php echo $row5['network'] ?>&t=<?php echo $row5['tel'] ?>&p=<?php echo $row5['price'] ?>"><img src="<?php echo "images/product/" . ($row5['network'] == 'TRUE' ? 'true.png' : ($row5['network'] == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" hspace="20" /></a>ผลรวม <?php echo $row5['sum'] ?></p>
+                            <h2><a href="productdetail/<?php echo $row5['network'] ?>/<?php echo $row5['tel'] ?>/<?php echo $row5['price'] ?>"><?php echo $row5['tel'] ?></a></h2>
+                            <p><a href="productdetail/<?php echo $row5['network'] ?>/<?php echo $row5['tel'] ?>/<?php echo $row5['price'] ?>"><img src="<?php echo "images/product/" . ($row5['network'] == 'TRUE' ? 'true.png' : ($row5['network'] == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" hspace="20" /></a>ผลรวม <?php echo $row5['sum'] ?></p>
                             <p class="product_price"><?php echo $row5['price'] ?> บาท</p>
-                            <a href="productdetail.php?n=<?php echo $row5['network'] ?>&t=<?php echo $row5['tel'] ?>&p=<?php echo $row5['price'] ?>" class="addtocart"></a>
+                            <a href="productdetail/<?php echo $row5['network'] ?>/<?php echo $row5['tel'] ?>/<?php echo $row5['price'] ?>" class="addtocart"></a>
                         </div>
                     <?php } ?>
 
@@ -158,10 +158,10 @@ include_once("./data_process/phone_number_fetch.php");
                     <?php $result6 = getBertel("เบอร์ตอง"); while ($row6 = $result6->fetch_assoc()) { ?>
                         <div class="product_box">
                             <h3>&nbsp;</h3>
-                            <h2><a href="productdetail.php?n=<?php echo $row6['network'] ?>&t=<?php echo $row6['tel'] ?>&p=<?php echo $row6['price'] ?>"><?php echo $row6['tel'] ?></a></h2>
-                            <p><a href="productdetail.php?n=<?php echo $row6['network'] ?>&t=<?php echo $row6['tel'] ?>&p=<?php echo $row6['price'] ?>"><img src="<?php echo "images/product/" . ($row6['network'] == 'TRUE' ? 'true.png' : ($row6['network'] == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" hspace="20" /></a>ผลรวม <?php echo $row6['sum'] ?></p>
+                            <h2><a href="productdetail/<?php echo $row6['network'] ?>/<?php echo $row6['tel'] ?>/<?php echo $row6['price'] ?>"><?php echo $row6['tel'] ?></a></h2>
+                            <p><a href="productdetail/<?php echo $row6['network'] ?>/<?php echo $row6['tel'] ?>/<?php echo $row6['price'] ?>"><img src="<?php echo "images/product/" . ($row6['network'] == 'TRUE' ? 'true.png' : ($row6['network'] == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" hspace="20" /></a>ผลรวม <?php echo $row6['sum'] ?></p>
                             <p class="product_price"><?php echo $row6['price'] ?> บาท</p>
-                            <a href="productdetail.php?n=<?php echo $row6['network'] ?>&t=<?php echo $row6['tel'] ?>&p=<?php echo $row6['price'] ?>" class="addtocart"></a>
+                            <a href="productdetail/<?php echo $row6['network'] ?>/<?php echo $row6['tel'] ?>/<?php echo $row6['price'] ?>" class="addtocart"></a>
                         </div>
                     <?php } ?>
 
@@ -175,10 +175,10 @@ include_once("./data_process/phone_number_fetch.php");
                     <?php $result7 = getBertel("เบอร์โฟร์"); while ($row7 = $result7->fetch_assoc()) { ?>
                         <div class="product_box">
                             <h3>&nbsp;</h3>
-                            <h2><a href="productdetail.php?n=<?php echo $row7['network'] ?>&t=<?php echo $row7['tel'] ?>&p=<?php echo $row7['price'] ?>"><?php echo $row7['tel'] ?></a></h2>
-                            <p><a href="productdetail.php?n=<?php echo $row7['network'] ?>&t=<?php echo $row7['tel'] ?>&p=<?php echo $row7['price'] ?>"><img src="<?php echo "images/product/" . ($row7['network'] == 'TRUE' ? 'true.png' : ($row7['network'] == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" hspace="20" /></a>ผลรวม <?php echo $row7['sum'] ?></p>
+                            <h2><a href="productdetail/<?php echo $row7['network'] ?>/<?php echo $row7['tel'] ?>/<?php echo $row7['price'] ?>"><?php echo $row7['tel'] ?></a></h2>
+                            <p><a href="productdetail/<?php echo $row7['network'] ?>/<?php echo $row7['tel'] ?>/<?php echo $row7['price'] ?>"><img src="<?php echo "images/product/" . ($row7['network'] == 'TRUE' ? 'true.png' : ($row7['network'] == 'AIS' ? 'ais.png' : 'dtac.png')) ?>" hspace="20" /></a>ผลรวม <?php echo $row7['sum'] ?></p>
                             <p class="product_price"><?php echo $row7['price'] ?> บาท</p>
-                            <a href="productdetail.php?n=<?php echo $row7['network'] ?>&t=<?php echo $row7['tel'] ?>&p=<?php echo $row7['price'] ?>" class="addtocart"></a>
+                            <a href="productdetail/<?php echo $row7['network'] ?>/<?php echo $row7['tel'] ?>/<?php echo $row7['price'] ?>" class="addtocart"></a>
                         </div>
                     <?php } ?>
 
@@ -192,7 +192,7 @@ include_once("./data_process/phone_number_fetch.php");
         <!-- ส่วนท้าย -->
         <div id="background_footer">
             <div id="templatemo_footer">
-                <p><a href="index.php">หน้าแรก</a> | <a href="products.php">หมวดหมู่เบอร์</a> | <a href="about.php">วิธีสั่งซื้อ</a> | <a href="faqs.php">ติดต่อเรา</a> | <a href="Login/login.php">Admin</a>
+                <p><a href="home">หน้าแรก</a> | <a href="products">หมวดหมู่เบอร์</a> | <a href="about">วิธีสั่งซื้อ</a> | <a href="faqs">ติดต่อเรา</a> | <a href="loginx">Admin</a>
                 </p>
                 Copyright © 2072 <a href="#">KlangBer.com</a> <!-- Credit: www.templatemo.com -->
             </div> <!-- END of templatemo_footer -->

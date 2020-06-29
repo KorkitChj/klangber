@@ -71,8 +71,8 @@ $con = $db->connect();
                         </li>
                         <li><a href="about.php">วิธีสั่งซื้อ</a></li>
                         <li><a href="faqs.php">ติดต่อเรา</a></li> -->
-                        <li><a href="checkout.php" class="selected">Admin</a></li>
-                        <li><a href="<?php echo DOMAIN . '/logout.php' ?>">Logout</a></li>
+                        <li><a href="checkout" class="selected">Admin</a></li>
+                        <li><a href="<?php echo DOMAIN . '/logout' ?>">Logout</a></li>
 
                     </ul>
                     <br style="clear: left" />
@@ -122,7 +122,7 @@ $con = $db->connect();
 
                             </fieldset>
                             <input type="submit" value="ยืนยัน" name="submit" />
-                            <input type="button" onclick="history.back();" value="ยกเลิก" />
+                            <input type="button" onclick="location.href='checkout'" value="ยกเลิก" />
                         </form>
                     </div>
 
@@ -135,7 +135,7 @@ $con = $db->connect();
     <!-- ส่วนท้าย -->
     <div id="background_footer">
         <div id="templatemo_footer">
-            <p><a href="index.php">หน้าแรก</a> | <a href="products.php">หมวดหมู่เบอร์</a> | <a href="about.php">วิธีสั่งซื้อ</a> | <a href="faqs.php">ติดต่อเรา</a> | <a href="Login/login.php">Admin</a>
+            <p><a href="home">หน้าแรก</a> | <a href="products">หมวดหมู่เบอร์</a> | <a href="about">วิธีสั่งซื้อ</a> | <a href="faqs">ติดต่อเรา</a> | <a href="loginx">Admin</a>
             </p>
             Copyright © 2072 <a href="#">KlangBer.com</a> <!-- Credit: www.templatemo.com -->
         </div> <!-- END of templatemo_footer -->
