@@ -80,7 +80,7 @@ $price = $_GET['p'];
                         </li>
                         <li><a href="about">วิธีสั่งซื้อ</a></li>
                         <li><a href="faqs">ติดต่อเรา</a></li>
-                        <li><a href="login">Admin</a></li>
+                        <li><a href="loginx">Admin</a></li>
                     </ul>
                     <br style="clear: left" />
                 </div> <!-- end of ddsmoothmenu -->

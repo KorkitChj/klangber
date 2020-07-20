@@ -69,7 +69,7 @@ include_once("./data_process/phone_number_fetch.php");
                         </li>
                         <li><a href="about">วิธีสั่งซื้อ</a></li>
                         <li><a href="faqs">ติดต่อเรา</a></li>
-                        <li><a href="login">Admin</a></li>
+                        <li><a href="loginx">Admin</a></li>
 
                     </ul>
                     <br style="clear: left" />
