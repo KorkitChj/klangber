@@ -1,4 +1,9 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
 include_once("../database/db.php");
 $db = new Database();
 $con = $db->connect();
@@ -63,7 +68,7 @@ while ($row = $result2->fetch_assoc()) {
     $sub_array[]  = $row["detail"];
     $sub_array[]  = $row["network"];
     $sub_array[]  = $row["type"];
-    $sub_array[]  = '<button  onclick="location.href=\''.DOMAIN.'/editTel/'.$row['pnid'].'\'">แก้ไข</button>
+    $sub_array[]  = '<button  onclick="location.href=\'http://localhost/klangber/editTel/'.$row['pnid'].'\'">แก้ไข</button>
     <button type="button" onclick="removePhonenumber(' . $row['pnid'].')">ลบ</button>';
 
     $data[] = $sub_array;
@@ -75,3 +80,6 @@ $json_data = array(
     "data"            => $data
 );
 echo json_encode($json_data);
+
+// $sub_array[]  = '<button  onclick="location.href=\'https://berchewit.com/editTel/'.$row['pnid'].'\'">แก้ไข</button>
+// <button type="button" onclick="removePhonenumber(' . $row['pnid'].')">ลบ</button>';

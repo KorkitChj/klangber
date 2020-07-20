@@ -1,15 +1,22 @@
 <?php
 include_once("./database/db.php");
+include_once("./database/constants.php");
 $db = new Database();
 $con = $db->connect();
 
 if (!isset($_SESSION["user_login"])) {
     echo "<script>
     alert('link ไม่ถูกต้อง');
-    window.location.href='" . DOMAIN . "/login/login.php';
+    window.location.href='" . DOMAIN . "/login';
     </script>";
 } else {
     $key = $_GET['id'];
+    if($key == ''){
+        echo "<script>
+    alert('link ไม่ถูกต้อง');
+    window.location.href='" . DOMAIN . "/login';
+    </script>";
+    }
     $sql_query = " SELECT pnid,tel,sum,price,detail,b.type,d.network,e.discount
 FROM phone_number AS a 
 INNER JOIN type AS b ON a.tid = b.tid
@@ -38,6 +45,7 @@ $row = $result->fetch_assoc();
 
     <head>
         <base href="/klangber/">
+        <!-- <base href="<?php echo DOMAIN ?>"> -->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Shoes Store - Check Out</title>
         <meta name="keywords" content="" />
@@ -75,7 +83,7 @@ $row = $result->fetch_assoc();
             <div id="background_header">
                 <div id="templatemo_header">
                     <div id="site_title">
-                        <h1><a href="#">KlangBer.com</a>
+                        <h1><a href="#">berchewit.com</a>
                         </h1>
                     </div>
                     <div id="header_right">
@@ -121,7 +129,7 @@ $row = $result->fetch_assoc();
                         <div class="form-style-5">
                             <form action="./data_process/phone_number_update.php" method="POST">
                                 <fieldset>
-                                    <legend><span class="number">1</span> เบอร์โทรศัพท์</legend>
+                                    <legend><span class="tel">1</span> เบอร์โทรศัพท์</legend>
                                     <input type="text" name="tel" value="<?php echo $row['tel'] ?>" required>
                                     <!-- <legend><span class="number">2</span> ผลรวม</legend>
                                     <input type="number" name="sum" value="<?php echo $row['sum'] ?>" required> -->
@@ -133,9 +141,9 @@ $row = $result->fetch_assoc();
                                     <legend><span class="number">5</span> เครื่อข่าย</legend>
                                     <select id="job" name="network">
                                         <optgroup label="โปรดเลือกเครื่อข่าย">
-                                            <option <?php if ($row['network'] == "DTAC" ) echo 'selected' ; ?>value="DTAC">Dtac</option>
-                                            <option <?php if ($row['network'] == "TRUE" ) echo 'selected' ; ?>value="TRUE">Truemove</option>
-                                            <option <?php if ($row['network'] == "AIS" ) echo 'selected' ; ?>value="AIS">Ais</option>
+                                            <option <?php if ($row['network'] == "DTAC" ) echo 'selected' ; ?> value="DTAC">Dtac</option>
+                                            <option <?php if ($row['network'] == "TRUE" ) echo 'selected' ; ?> value="TRUE">Truemove</option>
+                                            <option <?php if ($row['network'] == "AIS" ) echo 'selected' ; ?> value="AIS">Ais</option>
                                         </optgroup>
                                     </select>
 
@@ -166,9 +174,9 @@ $row = $result->fetch_assoc();
         <!-- ส่วนท้าย -->
         <div id="background_footer">
             <div id="templatemo_footer">
-                <p><a href="home">หน้าแรก</a> | <a href="products">หมวดหมู่เบอร์</a> | <a href="about">วิธีสั่งซื้อ</a> | <a href="faqs">ติดต่อเรา</a> | <a href="loginx">Admin</a>
+                <p><a href="home">หน้าแรก</a> | <a href="products">หมวดหมู่เบอร์</a> | <a href="about">วิธีสั่งซื้อ</a> | <a href="faqs">ติดต่อเรา</a> | <a href="login">Admin</a>
                 </p>
-                Copyright © 2072 <a href="#">KlangBer.com</a> <!-- Credit: www.templatemo.com -->
+                Copyright © 2072 <a href="#">berchewit.com</a> <!-- Credit: www.templatemo.com -->
             </div> <!-- END of templatemo_footer -->
         </div>
 

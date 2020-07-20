@@ -43,7 +43,7 @@ include_once("./data_process/phone_number_fetch.php");
       <div id="background_header">
         <div id="templatemo_header">
           <div id="site_title">
-            <h1><a href="#">KlangBer.com</a>
+            <h1><a href="#">berchewit.com</a>
             </h1>
           </div>
           <div id="header_right">
@@ -132,7 +132,7 @@ include_once("./data_process/phone_number_fetch.php");
         <div id="templatemo_footer">
           <p><a href="index">หน้าแรก</a> | <a href="products">หมวดหมู่เบอร์</a> | <a href="about">วิธีสั่งซื้อ</a> | <a href="faqs">ติดต่อเรา</a> | <a href="Login/login">Admin</a>
           </p>
-          Copyright © 2072 <a href="#">KlangBer.com</a> <!-- Credit: www.templatemo.com -->
+          Copyright © 2072 <a href="#">berchewit.com</a> <!-- Credit: www.templatemo.com -->
         </div> <!-- END of templatemo_footer -->
       </div>
       <script typt="text/javascript" src="js/phone_number_search.js"></script>

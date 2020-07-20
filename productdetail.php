@@ -1,4 +1,6 @@
 <?php
+include_once('./database/db.php');
+include_once('./database/constants.php');
 $tel = $_GET['t'];
 $network = $_GET['n'];
 $price = $_GET['p'];
@@ -9,6 +11,7 @@ $price = $_GET['p'];
 
 <head>
     <base href="/klangber/">
+    <!-- <base href="<?php echo DOMAIN ?>"> -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Shoes Store - Product Detail</title>
     <meta name="keywords" content="" />
@@ -50,7 +53,7 @@ $price = $_GET['p'];
         <div id="background_header">
             <div id="templatemo_header">
                 <div id="site_title">
-                    <h1><a href="#">KlangBer.com</a>
+                    <h1><a href="#">berchewit.com</a>
                     </h1>
                 </div>
                 <div id="header_right">
@@ -77,7 +80,7 @@ $price = $_GET['p'];
                         </li>
                         <li><a href="about">วิธีสั่งซื้อ</a></li>
                         <li><a href="faqs">ติดต่อเรา</a></li>
-                        <li><a href="loginx">Admin</a></li>
+                        <li><a href="login">Admin</a></li>
                     </ul>
                     <br style="clear: left" />
                 </div> <!-- end of ddsmoothmenu -->
@@ -108,7 +111,7 @@ $price = $_GET['p'];
                         <p>&nbsp;</p>
 
                         <p>ติดต่อเรา: 066-1689999,0644566651</p>
-                        <p>facebook: KlangBer คลังเบอร์</p>
+                        <p>facebook: berchewit คลังเบอร์</p>
                         <p>Line: @ber999</p>
 
                         <div class="cleaner h20"></div>

@@ -1,4 +1,6 @@
-<?php function tel()
+<?php
+include_once("./database/constants.php");
+ function tel()
 { ?>
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml">
@@ -63,7 +65,7 @@
             <div id="background_header">
                 <div id="templatemo_header">
                     <div id="site_title">
-                        <h1><a href="#">KlangBer.com</a>
+                        <h1><a href="#">berchewit.com</a>
                         </h1>
                     </div>
                     <div id="header_right">
@@ -156,9 +158,9 @@
         <!-- ส่วนท้าย -->
         <div id="background_footer">
             <div id="templatemo_footer">
-                <p><a href="home">หน้าแรก</a> | <a href="products">หมวดหมู่เบอร์</a> | <a href="about">วิธีสั่งซื้อ</a> | <a href="faqs">ติดต่อเรา</a> | <a href="Loginx">Admin</a>
+                <p><a href="home">หน้าแรก</a> | <a href="products">หมวดหมู่เบอร์</a> | <a href="about">วิธีสั่งซื้อ</a> | <a href="faqs">ติดต่อเรา</a> | <a href="login">Admin</a>
                 </p>
-                Copyright © 2072 <a href="#">KlangBer.com</a> <!-- Credit: www.templatemo.com -->
+                Copyright © 2072 <a href="#">berchewit.com</a> <!-- Credit: www.templatemo.com -->
             </div> <!-- END of templatemo_footer -->
         </div>
 
@@ -174,7 +176,7 @@
 <?php } ?>
 <?php
 header('Cache-Control: no cache'); //no cache
-session_cache_limiter('private_no_expire'); // works
+//session_cache_limiter('private_no_expire'); // works
 //session_cache_limiter('public'); // works too
 //session_start();
 include_once("./database/db.php");
@@ -228,7 +230,7 @@ if (!isset($_SESSION["user_login"])) {
             if ($returns != "LOGIN_SUCCESS") {
                 echo "<script>
                         alert('$returns');
-                        window.location.href='" . DOMAIN . "/login/login.php';
+                        window.location.href='" . DOMAIN . "/login';
                     </script>";
             } else {
                 $_SESSION["user_login"] = $_SESSION["uid"];
@@ -237,13 +239,13 @@ if (!isset($_SESSION["user_login"])) {
         } else {
             echo "<script>
             alert('link ไม่ถูกต้อง');
-            window.location.href='" . DOMAIN . "/login/login.php';
+            window.location.href='" . DOMAIN . "/login';
             </script>";
         }
     } else {
         echo "<script>
         alert('link ไม่ถูกต้อง');
-        window.location.href='" . DOMAIN . "/login/login.php';
+        window.location.href='" . DOMAIN . "/login';
         </script>";
     }
 } else {

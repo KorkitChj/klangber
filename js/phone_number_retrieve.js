@@ -1,5 +1,6 @@
 var phone_number;
 var DOMAIN = "http://localhost/klangber";
+//var DOMAIN = "https://"+window.location.hostname;
 $(document).ready(function () {
     console.log(DOMAIN);
     load_data();
