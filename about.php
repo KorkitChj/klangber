@@ -92,7 +92,7 @@
         <!-- ส่วนท้าย -->
         <div id="background_footer">
             <div id="templatemo_footer">
-                <p><a href="home">หน้าแรก</a> | <a href="products">หมวดหมู่เบอร์</a> | <a href="about">วิธีสั่งซื้อ</a> | <a href="faqs">ติดต่อเรา</a> | <a href="login">Admin</a>
+                <p><a href="home">หน้าแรก</a> | <a href="products">หมวดหมู่เบอร์</a> | <a href="about">วิธีสั่งซื้อ</a> | <a href="faqs">ติดต่อเรา</a> | <a href="loginx">Admin</a>
                 </p>
                 Copyright © 2072 <a href="#">berchewit.com</a> <!-- Credit: www.templatemo.com -->
             </div> <!-- END of templatemo_footer -->
